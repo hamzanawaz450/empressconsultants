@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-[#EFE9E3] text-white">
       <div className="container-custom section-padding">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
           {/* Company Info */}
@@ -13,7 +13,7 @@ export default function Footer() {
                 alt="Empress Consultants Logo" 
                 className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
               />
-              <span className="text-lg sm:text-xl font-bold">Empress Consultants</span>
+              <span className="text-lg sm:text-xl text-black font-bold">Empress Consultants</span>
             </div>
             <p className="text-gray-400 text-sm">
               Evidence-Based ABA and Related Services for Children Across New York
@@ -22,7 +22,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold mb-4">Quick Links</h3>
+            <h3 className="font-semibold mb-4 text-black ">Quick Links</h3>
             <ul className="space-y-2 text-sm text-gray-400">
               <li><Link to="/services" className="hover:text-white transition">Services</Link></li>
               <li><Link to="/schools" className="hover:text-white transition">For Schools</Link></li>
@@ -33,7 +33,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="font-semibold mb-4">Contact</h3>
+            <h3 className="font-semibold mb-4 text-black ">Contact</h3>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>Phone: (646) 769-0706</li>
               <li>Email: info@empress-consultants.com</li>
@@ -43,7 +43,7 @@ export default function Footer() {
 
           {/* Legal */}
           <div>
-            <h3 className="font-semibold mb-4">Legal</h3>
+            <h3 className="font-semibold mb-4 text-black ">Legal</h3>
             <ul className="space-y-2 text-sm text-gray-400">
               <li><Link to="/compliance" className="hover:text-white transition">Compliance & Privacy</Link></li>
               <li><Link to="/about" className="hover:text-white transition">About Us</Link></li>

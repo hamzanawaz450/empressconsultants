@@ -19,9 +19,10 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
-            <Link to="/" className="text-gray-700 hover:text-primary-600 transition-colors duration-200">Home</Link>
+            <Link to="/home" className="text-gray-700 hover:text-primary-600 transition-colors duration-200">Home</Link>
             <Link to="/services" className="text-gray-700 hover:text-primary-600 transition-colors duration-200">Services</Link>
             <Link to="/schools" className="text-gray-700 hover:text-primary-600 transition-colors duration-200">For Schools</Link>
+            <Link to="/parents" className="text-gray-700 hover:text-primary-600 transition-colors duration-200">For Parents</Link>
             <Link to="/legal" className="text-gray-700 hover:text-primary-600 transition-colors duration-200">Legal & Advocacy</Link>
             <Link to="/about" className="text-gray-700 hover:text-primary-600 transition-colors duration-200">About</Link>
             <Link to="/careers" className="text-gray-700 hover:text-primary-600 transition-colors duration-200">Careers</Link>
@@ -64,7 +65,7 @@ export default function Header() {
         >
           <div className="px-4 py-4 space-y-1">
             <Link 
-              to="/" 
+              to="/home" 
               className="block py-3 px-4 text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-all duration-200 transform hover:translate-x-1" 
               onClick={() => setIsMenuOpen(false)}
             >
@@ -83,6 +84,13 @@ export default function Header() {
               onClick={() => setIsMenuOpen(false)}
             >
               For Schools
+            </Link>
+            <Link 
+              to="/parents" 
+              className="block py-3 px-4 text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-all duration-200 transform hover:translate-x-1" 
+              onClick={() => setIsMenuOpen(false)}
+            >
+              For Parents
             </Link>
             <Link 
               to="/legal" 

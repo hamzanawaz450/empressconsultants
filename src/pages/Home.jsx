@@ -25,7 +25,7 @@ export default function Home() {
             </div>
             <div className="order-1 md:order-2">
               <img 
-                src="/iStock-1256025624.jpg" 
+                src="/iStock-1357352061.jpg" 
                 alt="Child learning with ABA therapy" 
                 className="rounded-lg shadow-xl w-full h-auto"
               />
@@ -138,38 +138,113 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Video Section - Parent Orientation */}
+      <section className="section-padding bg-[#EFE9E3]">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-8">
+              <h2 className="text-2xl sm:text-3xl font-bold mb-4">60-Second Parent Orientation</h2>
+              <p className="text-base sm:text-lg text-gray-700">
+                Get a quick overview of our approach and what to expect
+              </p>
+            </div>
+            <div className="bg-white rounded-lg shadow-xl overflow-hidden">
+              <div className="aspect-video bg-gray-900 flex items-center justify-center relative group cursor-pointer">
+                {/* Video Placeholder - Replace with actual video embed */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <svg className="w-20 h-20 text-white group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                </div>
+                {/* Video Thumbnail Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary-600/20 to-primary-700/20"></div>
+                {/* Play Button */}
+                <div className="relative z-10 bg-white/20 hover:bg-white/30 rounded-full p-4 transition-all duration-300 group-hover:scale-110">
+                  <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                </div>
+                {/* Video will be embedded here - placeholder for now */}
+                {/* 
+                <iframe 
+                  className="absolute inset-0 w-full h-full"
+                  src="YOUR_VIDEO_URL_HERE"
+                  title="60-Second Parent Orientation"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+                */}
+              </div>
+              <div className="p-6 sm:p-8">
+                <h3 className="text-xl font-semibold mb-3">What You'll Learn</h3>
+                <ul className="space-y-2 text-gray-700">
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Our evidence-based approach to ABA therapy</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>What to expect in your first consultation</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>How we personalize services for each child</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Our commitment to family partnership</span>
+                  </li>
+                </ul>
+                <p className="mt-4 text-sm text-gray-600">
+                  <strong>Note:</strong> Video includes captions and transcripts for accessibility (WCAG 2.2 AA compliant)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Credentials Bar */}
-      <section className="bg-primary-600 text-white py-6 sm:py-8">
+      <section className="bg-primary-600 text-white py-6 sm:py-8" style={{ backgroundColor: '#C9B59C' }}>
         <div className="container-custom">
           <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 sm:gap-6 md:gap-8 text-center">
             <div>
               <p className="font-semibold text-sm sm:text-base">BCBA/LBA-NY</p>
-              <p className="text-xs sm:text-sm text-primary-100">Board Certified</p>
+              <p className="text-xs sm:text-sm text-white/80">Board Certified</p>
             </div>
-            <div className="hidden sm:block w-px h-8 md:h-12 bg-primary-400"></div>
+            <div className="hidden sm:block w-px h-8 md:h-12 bg-white/30"></div>
             <div>
               <p className="font-semibold text-sm sm:text-base">DOE Vendor</p>
-              <p className="text-xs sm:text-sm text-primary-100">Authorized Provider</p>
+              <p className="text-xs sm:text-sm text-white/80">Authorized Provider</p>
             </div>
-            <div className="hidden sm:block w-px h-8 md:h-12 bg-primary-400"></div>
+            <div className="hidden sm:block w-px h-8 md:h-12 bg-white/30"></div>
             <div>
               <p className="font-semibold text-sm sm:text-base">HIPAA & FERPA Compliant</p>
-              <p className="text-xs sm:text-sm text-primary-100">Privacy Protected</p>
+              <p className="text-xs sm:text-sm text-white/80">Privacy Protected</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Closing CTA */}
-      <section className="section-padding bg-gradient-to-r from-primary-600 to-primary-700 text-white">
+      <section className="section-padding text-white" style={{ background: 'linear-gradient(to right, #C9B59C, #b8a589)' }}>
         <div className="container-custom text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
             Schedule Your Free Intake Consultation
           </h2>
-          <p className="text-lg sm:text-xl mb-6 sm:mb-8 text-primary-100 px-4">
+          <p className="text-lg sm:text-xl mb-6 sm:mb-8 text-white/90 px-4">
             Take the first step towards transforming potential into progress
           </p>
-          <Link to="/contact" className="btn-secondary bg-white text-primary-600 hover:bg-gray-100 inline-block">
+          <Link to="/contact" className="btn-secondary bg-white text-primary-600 hover:bg-gray-100 inline-block" style={{ color: '#C9B59C' }}>
             Get Started Today
           </Link>
         </div>
