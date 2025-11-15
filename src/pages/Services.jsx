@@ -66,7 +66,7 @@ export default function Services() {
                   <div className="p-4 sm:p-6">
                     <h3 className="text-xl sm:text-2xl font-semibold mb-2 sm:mb-3 text-gray-900">{service.title}</h3>
                     <p className="text-sm sm:text-base text-gray-700 mb-3 sm:mb-4">{service.description}</p>
-                    <span className="text-primary-600 font-semibold hover:text-primary-700 text-sm sm:text-base inline-flex items-center">
+                    <span className="font-semibold text-sm sm:text-base inline-flex items-center" style={{ color: '#D4AF37' }}>
                       Learn More 
                       <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -92,13 +92,13 @@ export default function Services() {
       </section>
 
       {/* CTA */}
-      <section className="section-padding text-white" style={{ backgroundColor: '#C9B59C' }}>
+      <section className="section-padding text-white" style={{ backgroundColor: '#D4AF37' }}>
         <div className="container-custom text-center">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">Ready to Get Started?</h2>
-          <p className="text-lg sm:text-xl mb-6 sm:mb-8 text-white/90 px-4">
+          <p className="text-lg sm:text-xl mb-6 sm:mb-8 px-4" style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
             Contact us to learn more about our services
           </p>
-          <Link to="/contact" className="btn-secondary bg-white hover:bg-gray-100 inline-block" style={{ color: '#C9B59C' }}>
+          <Link to="/contact" className="btn-secondary bg-white hover:bg-gray-100 inline-block">
             Book a Consultation
           </Link>
         </div>

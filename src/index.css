@@ -1,11 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary-50: #f5f2ef;
-  --color-primary-100: #ebe6e0;
-  --color-primary-500: #d4c4b0;
-  --color-primary-600: #C9B59C;
-  --color-primary-700: #b8a589;
+  --color-primary-50: #fef9f3;
+  --color-primary-100: #fdf3e7;
+  --color-primary-500: #D4AF37;
+  --color-primary-600: #C9A428;
+  --color-primary-700: #B8941F;
+  --color-black: #000000;
+  --color-gold: #D4AF37;
 }
 
 @layer base {
@@ -21,16 +23,22 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-primary-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold hover:bg-primary-700 transition-all duration-200 text-sm sm:text-base transform hover:scale-105 active:scale-95;
-    background-color: #C9B59C;
+    @apply text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold transition-all duration-200 text-sm sm:text-base transform hover:scale-105 active:scale-95;
+    background-color: #D4AF37;
   }
   
   .btn-primary:hover {
-    background-color: #b8a589;
+    background-color: #C9A428;
   }
 
   .btn-secondary {
-    @apply bg-white text-primary-600 border-2 border-primary-600 px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold hover:bg-primary-50 transition-all duration-200 text-sm sm:text-base transform hover:scale-105 active:scale-95;
+    @apply bg-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold hover:bg-primary-50 transition-all duration-200 text-sm sm:text-base transform hover:scale-105 active:scale-95;
+    color: #000000;
+    border: 2px solid #D4AF37;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #fef9f3;
   }
 
   .section-padding {

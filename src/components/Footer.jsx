@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="sm:col-span-2 md:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
               <img 
-                src="/e39aef7b-089f-4323-baa9-6c90a0398d75.jpg" 
+                src="/main logo.jpeg" 
                 alt="Empress Consultants Logo" 
                 className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
               />

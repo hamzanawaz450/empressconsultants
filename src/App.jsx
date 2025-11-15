@@ -8,6 +8,7 @@ import ABATherapy from './pages/ABATherapy';
 import ParentTraining from './pages/ParentTraining';
 import Supervision from './pages/Supervision';
 import RelatedServices from './pages/RelatedServices';
+import ImpartialHearing from './pages/ImpartialHearing';
 import ForSchools from './pages/ForSchools';
 import ForParents from './pages/ForParents';
 import LegalAdvocacy from './pages/LegalAdvocacy';
@@ -24,13 +25,14 @@ function App() {
         <Header />
         <main className="flex-grow">
           <Routes>
-            <Route path="/" element={<Landing />} />
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/landing" element={<Landing />} />
             <Route path="/services" element={<Services />} />
             <Route path="/services/aba-therapy" element={<ABATherapy />} />
             <Route path="/services/parent-training" element={<ParentTraining />} />
             <Route path="/services/supervision" element={<Supervision />} />
             <Route path="/services/related-services" element={<RelatedServices />} />
+            <Route path="/services/impartial-hearing" element={<ImpartialHearing />} />
             <Route path="/schools" element={<ForSchools />} />
             <Route path="/parents" element={<ForParents />} />
             <Route path="/legal" element={<LegalAdvocacy />} />

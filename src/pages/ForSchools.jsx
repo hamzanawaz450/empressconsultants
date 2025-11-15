@@ -65,7 +65,7 @@ export default function ForSchools() {
           <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">What You Can Expect</h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
             <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md text-center">
-              <div className="w-14 h-14 sm:w-16 sm:h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-4" style={{ backgroundColor: '#D4AF37' }}>
                 <svg className="w-7 h-7 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -74,7 +74,7 @@ export default function ForSchools() {
               <p className="text-sm sm:text-base text-gray-700">Enhanced skills in behavioral support strategies</p>
             </div>
             <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md text-center">
-              <div className="w-14 h-14 sm:w-16 sm:h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-4" style={{ backgroundColor: '#D4AF37' }}>
                 <svg className="w-7 h-7 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -83,7 +83,7 @@ export default function ForSchools() {
               <p className="text-sm sm:text-base text-gray-700">Reduced behavioral incidents in the classroom</p>
             </div>
             <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md text-center">
-              <div className="w-14 h-14 sm:w-16 sm:h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-4" style={{ backgroundColor: '#D4AF37' }}>
                 <svg className="w-7 h-7 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                 </svg>
@@ -96,13 +96,13 @@ export default function ForSchools() {
       </section>
 
       {/* CTA */}
-      <section className="section-padding text-white" style={{ backgroundColor: '#C9B59C' }}>
+      <section className="section-padding text-white" style={{ backgroundColor: '#D4AF37' }}>
         <div className="container-custom text-center">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">Ready to Partner?</h2>
-          <p className="text-lg sm:text-xl mb-6 sm:mb-8 text-white/90 px-4">
+          <p className="text-lg sm:text-xl mb-6 sm:mb-8 px-4" style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
             Request a partnership call to discuss how we can support your school
           </p>
-          <Link to="/contact" className="btn-secondary bg-white hover:bg-gray-100 inline-block" style={{ color: '#C9B59C' }}>
+          <Link to="/contact" className="btn-secondary bg-white hover:bg-gray-100 inline-block">
             Request a Partnership Call
           </Link>
         </div>

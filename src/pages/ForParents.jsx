@@ -77,7 +77,7 @@ export default function ForParents() {
           <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">What You Get</h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
             <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md text-center">
-              <div className="w-14 h-14 sm:w-16 sm:h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-4" style={{ backgroundColor: '#D4AF37' }}>
                 <svg className="w-7 h-7 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                 </svg>
@@ -86,7 +86,7 @@ export default function ForParents() {
               <p className="text-sm sm:text-base text-gray-700">60-90 second videos, captioned and transcribed</p>
             </div>
             <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md text-center">
-              <div className="w-14 h-14 sm:w-16 sm:h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-4" style={{ backgroundColor: '#D4AF37' }}>
                 <svg className="w-7 h-7 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
@@ -95,7 +95,7 @@ export default function ForParents() {
               <p className="text-sm sm:text-base text-gray-700">Printable PDFs and practical checklists</p>
             </div>
             <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md text-center">
-              <div className="w-14 h-14 sm:w-16 sm:h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-4" style={{ backgroundColor: '#D4AF37' }}>
                 <svg className="w-7 h-7 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
                 </svg>
@@ -108,13 +108,13 @@ export default function ForParents() {
       </section>
 
       {/* CTA */}
-      <section className="section-padding text-white" style={{ backgroundColor: '#C9B59C' }}>
+      <section className="section-padding text-white" style={{ backgroundColor: '#D4AF37' }}>
         <div className="container-custom text-center">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">Ready to Get Started?</h2>
-          <p className="text-lg sm:text-xl mb-6 sm:mb-8 text-white/90 px-4">
+          <p className="text-lg sm:text-xl mb-6 sm:mb-8 px-4" style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
             Access our parent resources and schedule your consultation
           </p>
-          <Link to="/contact" className="btn-secondary bg-white hover:bg-gray-100 inline-block" style={{ color: '#C9B59C' }}>
+          <Link to="/contact" className="btn-secondary bg-white hover:bg-gray-100 inline-block">
             Book a Consultation
           </Link>
         </div>

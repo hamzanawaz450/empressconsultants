@@ -8,25 +8,34 @@ export default function Header() {
     <header className="shadow-md sticky top-0 z-50">
       <nav className="container-custom">
         <div className="flex items-center justify-between h-16 px-4 sm:px-6">
-          <Link to="/" className="flex items-center space-x-2 group">
+          <Link to="/" className="flex items-center space-x-3 group">
             <img 
-              src="/e39aef7b-089f-4323-baa9-6c90a0398d75.jpg" 
+              src="/main logo.jpeg" 
               alt="Empress Consultants Logo" 
-              className="w-10 h-10 sm:w-12 sm:h-12 object-contain transition-transform duration-300 group-hover:scale-105"
+              className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
             />
-            <span className="text-base sm:text-xl font-bold text-gray-900">Empress Consultants</span>
+            <span className="text-xl sm:text-2xl font-bold" style={{ color: '#000000' }}>Empress Consultants</span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
-            <Link to="/home" className="text-gray-700 hover:text-primary-600 transition-colors duration-200">Home</Link>
-            <Link to="/services" className="text-gray-700 hover:text-primary-600 transition-colors duration-200">Services</Link>
-            <Link to="/schools" className="text-gray-700 hover:text-primary-600 transition-colors duration-200">For Schools</Link>
-            <Link to="/parents" className="text-gray-700 hover:text-primary-600 transition-colors duration-200">For Parents</Link>
-            <Link to="/legal" className="text-gray-700 hover:text-primary-600 transition-colors duration-200">Legal & Advocacy</Link>
+            <Link to="/" className="text-gray-700 hover:text-primary-600 transition-colors duration-200">Home</Link>
             <Link to="/about" className="text-gray-700 hover:text-primary-600 transition-colors duration-200">About</Link>
-            <Link to="/careers" className="text-gray-700 hover:text-primary-600 transition-colors duration-200">Careers</Link>
-            <Link to="/resources" className="text-gray-700 hover:text-primary-600 transition-colors duration-200">Resources</Link>
+            <div className="relative group">
+              <button className="text-gray-700 hover:text-primary-600 transition-colors duration-200 flex items-center gap-1">
+                Services
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div className="absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <Link to="/services/aba-therapy" className="block px-4 py-3 text-gray-700 hover:bg-primary-50 hover:text-primary-600 transition-colors duration-200">ABA Therapy</Link>
+                <Link to="/services/supervision" className="block px-4 py-3 text-gray-700 hover:bg-primary-50 hover:text-primary-600 transition-colors duration-200">Supervision (BCBA/LBA)</Link>
+                <Link to="/services/parent-training" className="block px-4 py-3 text-gray-700 hover:bg-primary-50 hover:text-primary-600 transition-colors duration-200">Parent Training</Link>
+                <Link to="/services/impartial-hearing" className="block px-4 py-3 text-gray-700 hover:bg-primary-50 hover:text-primary-600 transition-colors duration-200">Impartial Hearing Support</Link>
+                <Link to="/services/related-services" className="block px-4 py-3 text-gray-700 hover:bg-primary-50 hover:text-primary-600 transition-colors duration-200">Related Service Coordination</Link>
+              </div>
+            </div>
             <Link to="/contact" className="btn-primary">Contact</Link>
           </div>
 
@@ -60,44 +69,16 @@ export default function Header() {
         {/* Mobile Navigation with Slide Animation */}
         <div 
           className={`md:hidden border-t border-gray-200 overflow-hidden transition-all duration-300 ease-in-out ${
-            isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+            isMenuOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
           }`}
         >
           <div className="px-4 py-4 space-y-1">
             <Link 
-              to="/home" 
+              to="/" 
               className="block py-3 px-4 text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-all duration-200 transform hover:translate-x-1" 
               onClick={() => setIsMenuOpen(false)}
             >
               Home
-            </Link>
-            <Link 
-              to="/services" 
-              className="block py-3 px-4 text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-all duration-200 transform hover:translate-x-1" 
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Services
-            </Link>
-            <Link 
-              to="/schools" 
-              className="block py-3 px-4 text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-all duration-200 transform hover:translate-x-1" 
-              onClick={() => setIsMenuOpen(false)}
-            >
-              For Schools
-            </Link>
-            <Link 
-              to="/parents" 
-              className="block py-3 px-4 text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-all duration-200 transform hover:translate-x-1" 
-              onClick={() => setIsMenuOpen(false)}
-            >
-              For Parents
-            </Link>
-            <Link 
-              to="/legal" 
-              className="block py-3 px-4 text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-all duration-200 transform hover:translate-x-1" 
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Legal & Advocacy
             </Link>
             <Link 
               to="/about" 
@@ -106,19 +87,41 @@ export default function Header() {
             >
               About
             </Link>
+            <div className="py-2 px-4 text-sm font-semibold text-gray-500">Services</div>
             <Link 
-              to="/careers" 
-              className="block py-3 px-4 text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-all duration-200 transform hover:translate-x-1" 
+              to="/services/aba-therapy" 
+              className="block py-2 px-6 text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-all duration-200" 
               onClick={() => setIsMenuOpen(false)}
             >
-              Careers
+              ABA Therapy
             </Link>
             <Link 
-              to="/resources" 
-              className="block py-3 px-4 text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-all duration-200 transform hover:translate-x-1" 
+              to="/services/supervision" 
+              className="block py-2 px-6 text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-all duration-200" 
               onClick={() => setIsMenuOpen(false)}
             >
-              Resources
+              Supervision (BCBA/LBA)
+            </Link>
+            <Link 
+              to="/services/parent-training" 
+              className="block py-2 px-6 text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-all duration-200" 
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Parent Training
+            </Link>
+            <Link 
+              to="/services/impartial-hearing" 
+              className="block py-2 px-6 text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-all duration-200" 
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Impartial Hearing Support
+            </Link>
+            <Link 
+              to="/services/related-services" 
+              className="block py-2 px-6 text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-all duration-200" 
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Related Service Coordination
             </Link>
             <Link 
               to="/contact" 

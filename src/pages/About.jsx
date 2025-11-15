@@ -98,7 +98,7 @@ export default function About() {
           <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">Leadership</h2>
           <div className="max-w-2xl mx-auto bg-white p-4 sm:p-6 md:p-8 rounded-lg shadow-md mx-4 sm:mx-auto">
             <div className="flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-6 mb-6">
-              <div className="w-20 h-20 sm:w-24 sm:h-24 bg-primary-600 rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: '#D4AF37' }}>
                 <span className="text-white text-2xl sm:text-3xl font-bold">MT</span>
               </div>
               <div className="text-center sm:text-left">
@@ -124,15 +124,15 @@ export default function About() {
           <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">Our Values</h2>
           <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
             <div className="text-center">
-              <h3 className="text-xl font-semibold text-primary-600 mb-2">Integrity</h3>
+              <h3 className="text-xl font-semibold mb-2" style={{ color: '#D4AF37' }}>Integrity</h3>
               <p className="text-gray-700">Ethical practice in all we do</p>
             </div>
             <div className="text-center">
-              <h3 className="text-xl font-semibold text-primary-600 mb-2">Data Accuracy</h3>
+              <h3 className="text-xl font-semibold mb-2" style={{ color: '#D4AF37' }}>Data Accuracy</h3>
               <p className="text-gray-700">Evidence-based decision making</p>
             </div>
             <div className="text-center">
-              <h3 className="text-xl font-semibold text-primary-600 mb-2">Cultural Competence</h3>
+              <h3 className="text-xl font-semibold mb-2" style={{ color: '#D4AF37' }}>Cultural Competence</h3>
               <p className="text-gray-700">Respectful, inclusive service delivery</p>
             </div>
           </div>

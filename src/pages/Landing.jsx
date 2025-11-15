@@ -19,8 +19,7 @@ export default function Landing() {
           <div className="absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2 z-10">
             <button
               onClick={scrollToPrinciples}
-              className="bg-white/95 hover:bg-white text-primary-600 px-5 sm:px-6 py-2.5 sm:py-3 rounded-full font-semibold shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center gap-2 group text-sm sm:text-base"
-              style={{ backgroundColor: '#C9B59C', color: 'white' }}
+              className="btn-primary px-5 sm:px-6 py-2.5 sm:py-3 rounded-full font-semibold shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center gap-2 group text-sm sm:text-base"
             >
               <span>Read more</span>
               <svg 
@@ -209,9 +208,8 @@ export default function Landing() {
             {/* CTA Section */}
             <div className="mt-12 text-center">
               <Link 
-                to="/home" 
+                to="/" 
                 className="btn-primary inline-block text-lg px-8 py-4"
-                style={{ backgroundColor: '#C9B59C' }}
               >
                 Explore Our Services
               </Link>
