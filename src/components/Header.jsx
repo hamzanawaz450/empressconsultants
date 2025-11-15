@@ -22,12 +22,12 @@ export default function Header() {
             <Link to="/" className="text-gray-700 hover:text-primary-600 transition-colors duration-200">Home</Link>
             <Link to="/about" className="text-gray-700 hover:text-primary-600 transition-colors duration-200">About</Link>
             <div className="relative group">
-              <button className="text-gray-700 hover:text-primary-600 transition-colors duration-200 flex items-center gap-1">
-                Services
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
+              <Link to="/services" className="text-gray-700 hover:text-primary-600 transition-colors duration-200 flex items-center gap-1">
+  Services
+  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+  </svg>
+</Link>
               <div className="absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 <Link to="/services/aba-therapy" className="block px-4 py-3 text-gray-700 hover:bg-primary-50 hover:text-primary-600 transition-colors duration-200">ABA Therapy</Link>
                 <Link to="/services/supervision" className="block px-4 py-3 text-gray-700 hover:bg-primary-50 hover:text-primary-600 transition-colors duration-200">Supervision (BCBA/LBA)</Link>
