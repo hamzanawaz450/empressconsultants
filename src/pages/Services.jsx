@@ -26,6 +26,13 @@ export default function Services() {
       image: "/iStock-1357352061.jpg",
       link: "/services/related-services"
     }
+    ,
+    {
+      title: "Impartial Hearing Support",
+      description: "Expert implementation of Findings of Fact and Decision (FOFD) and Impartial Hearing Officer (IHO) orders. We provide clinical documentation, expert testimony, and compliance support for families navigating the legal process to secure appropriate educational services.",
+      image: "/iStock-1256025624.jpg",
+      link: "/services/impartial-hearing"
+    }
   ];
 
 
@@ -43,40 +50,70 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Services Cards */}
+      {/* What we do - clickable list that scrolls to details */}
       <section className="section-padding bg-white">
-        <div className="container-custom">
-          <div className="max-w-4xl mx-auto">
-            <p className="text-base sm:text-lg text-gray-700 mb-8 sm:mb-12 text-center px-4">
-              Our multidisciplinary team provides Applied Behavior Analysis and related therapies designed for each child's environment—home, school, or community.
-            </p>
-            
-            <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
-              {services.map((service, index) => (
-                <Link 
-                  key={index} 
-                  to={service.link} 
-                  className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 block"
-                >
-                  <img 
-                    src={service.image} 
-                    alt={service.title}
-                    className="w-full h-48 sm:h-64 object-cover"
-                  />
-                  <div className="p-4 sm:p-6">
-                    <h3 className="text-xl sm:text-2xl font-semibold mb-2 sm:mb-3 text-gray-900">{service.title}</h3>
-                    <p className="text-sm sm:text-base text-gray-700 mb-3 sm:mb-4">{service.description}</p>
-                    <span className="font-semibold text-sm sm:text-base inline-flex items-center" style={{ color: '#D4AF37' }}>
-                      Learn More 
-                      <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                      </svg>
-                    </span>
-                  </div>
-                </Link>
-              ))}
-            </div>
+        <div className="container-custom max-w-6xl">
+          <h2 className="text-3xl font-bold mb-6" >What we do:</h2>
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            {(() => {
+              const half = Math.ceil(services.length / 2);
+              const left = services.slice(0, half);
+              const right = services.slice(half);
+              return (
+                <>
+                  <ul className="space-y-4">
+                    {left.map((s, i) => (
+                      <li key={s.title} className="flex items-start">
+                        <span className="mr-4 text-2xl" >🧩</span>
+                        <button
+                          className="text-lg underline text-gray-700 hover:text-gray-900 text-left"
+                          onClick={() => document.getElementById(s.link.replace('/services/', ''))?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                        >
+                          {s.title}
+                        </button>
+                      </li>
+                    ))}
+                  </ul>
+                  <ul className="space-y-4">
+                    {right.map((s, i) => (
+                      <li key={s.title} className="flex items-start">
+                        <span className="mr-4 text-2xl" >🧩</span>
+                        <button
+                          className="text-lg underline text-gray-700 hover:text-gray-900 text-left"
+                          onClick={() => document.getElementById(s.link.replace('/services/', ''))?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                        >
+                          {s.title}
+                        </button>
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              );
+            })()}
           </div>
+        </div>
+      </section>
+
+      {/* Detailed Service Sections (anchors) - in-page only (no separate pages) */}
+      <section className="section-padding bg-[#EFE9E3]">
+        <div className="container-custom max-w-6xl">
+          {services.map((service) => {
+            const id = service.link.replace('/services/', '');
+            return (
+              <div key={service.title} id={id} className="bg-white rounded-lg shadow-md mb-8 overflow-hidden">
+                <div className="grid md:grid-cols-2">
+                  <div className="h-56 md:h-auto">
+                    <img src={service.image} alt={service.title} className="w-full h-full object-cover" />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-2xl font-bold mb-3" >{service.title}</h3>
+                    <p className="text-gray-700 mb-4">{service.description}</p>
+                    <Link to={service.link} className="btn-secondary inline-block">Read More</Link>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </section>
 

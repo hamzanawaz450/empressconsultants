@@ -1,22 +1,65 @@
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+
+function SliderImages() {
+  const images = [
+    '/iStock-1357352061.jpg',
+    '/iStock-487419534.jpg',
+    '/iStock-1332728408.jpg',
+    '/iStock-2159187467.jpg',
+    '/iStock-2162383464.jpg'
+  ];
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const t = setInterval(() => {
+      setCurrent((c) => (c + 1) % images.length);
+    }, 4000);
+    return () => clearInterval(t);
+  }, []);
+
+  return (
+    <div className="relative w-full h-full">
+      {images.map((src, i) => (
+        <img
+          key={src}
+          src={src}
+          alt={`Slide ${i + 1}`}
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
+            i === current ? 'opacity-100' : 'opacity-0'
+          }`}
+        />
+      ))}
+      <div className="absolute left-1/2 bottom-4 transform -translate-x-1/2 flex space-x-2">
+        {images.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setCurrent(i)}
+            aria-label={`Go to slide ${i + 1}`}
+            className={`w-3 h-3 rounded-full ${i === current ? 'bg-white' : 'bg-white/50'} border`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section with Image and Welcome */}
       <section className="relative">
-        <div className="grid md:grid-cols-2 min-h-[400px] md:min-h-[500px]">
-          {/* Left side - Image */}
-          <div className="relative h-[300px] md:h-auto">
-            <img 
-              src="/iStock-1357352061.jpg" 
-              alt="Child learning with ABA therapy" 
-              className="w-full h-full object-cover"
-            />
+        <div className="flex flex-col md:flex-row min-h-[400px] md:min-h-[500px]">
+          {/* Left side - Image Slider (approx 65%) */}
+          <div className="relative h-[300px] md:h-auto overflow-hidden" style={{ flex: '0 0 65%' }}>
+            {/* slider state and images */}
+            {/* images array */}
+            {/* We'll render images absolutely and fade between them */}
+            <SliderImages />
           </div>
           
-          {/* Right side - Welcome Message */}
-          <div className="flex flex-col justify-center p-8 md:p-12 text-white" style={{ backgroundColor: '#D4AF37' }}>
+          {/* Right side - Welcome Message (40%) */}
+          <div className="flex flex-col justify-center p-8 md:p-12 text-white" style={{ backgroundColor: '#D4AF37', flex: '0 0 35%' }}>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
               Welcome to<br />Empress Consultants
             </h1>
