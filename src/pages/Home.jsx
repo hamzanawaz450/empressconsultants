@@ -36,7 +36,7 @@ function SliderImages() {
             key={i}
             onClick={() => setCurrent(i)}
             aria-label={`Go to slide ${i + 1}`}
-            className={`w-3 h-3 rounded-full ${i === current ? 'bg-white' : 'bg-white/50'} border`}
+            className={`w-3 h-3 rounded-full ${i === current ? 'bg-[#D4AF37]' : 'bg-[#D4AF37]/50'} border border-black/20`}
           />
         ))}
       </div>
@@ -56,14 +56,14 @@ export default function Home() {
       </section>
 
       {/* Three Pillars Section */}
-      <section className="py-12 md:py-16 bg-white">
+      <section className="py-12 md:py-16 bg-[#EFE9E3]">
         <div className="container mx-auto px-4 max-w-6xl">
           {/* Section Title */}
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-2" style={{ color: '#D4AF37' }}>
               3 Pillars
             </h2>
-            <p className="text-lg md:text-xl font-semibold text-gray-700">
+            <p className="text-lg md:text-xl font-semibold text-black">
               Our Values
             </p>
           </div>
@@ -71,31 +71,31 @@ export default function Home() {
           {/* Pillars Grid */}
           <div className="grid md:grid-cols-3 gap-6 md:gap-8">
             {/* Integrity */}
-            <div className="bg-white p-6 md:p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+            <div className="bg-[#F5F0E8] p-6 md:p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border border-black/10">
               <h3 className="text-xl md:text-2xl font-bold mb-3" style={{ color: '#D4AF37' }}>
                 Integrity
               </h3>
-              <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+              <p className="text-black text-base md:text-lg leading-relaxed">
                 Ethical practice in all we do
               </p>
             </div>
 
             {/* Data Accuracy */}
-            <div className="bg-white p-6 md:p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+            <div className="bg-[#F5F0E8] p-6 md:p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border border-black/10">
               <h3 className="text-xl md:text-2xl font-bold mb-3" style={{ color: '#D4AF37' }}>
                 Data Accuracy
               </h3>
-              <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+              <p className="text-black text-base md:text-lg leading-relaxed">
                 Evidence-based decision making
               </p>
             </div>
 
             {/* Cultural Competence */}
-            <div className="bg-white p-6 md:p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+            <div className="bg-[#F5F0E8] p-6 md:p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border border-black/10">
               <h3 className="text-xl md:text-2xl font-bold mb-3" style={{ color: '#D4AF37' }}>
                 Cultural Competence
               </h3>
-              <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+              <p className="text-black text-base md:text-lg leading-relaxed">
                 Respectful, inclusive service delivery
               </p>
             </div>

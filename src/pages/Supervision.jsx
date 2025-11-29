@@ -9,13 +9,13 @@ export default function Supervision() {
             Supervision (BCBA/LBA)
           </h1>
           
-          <div className="bg-white p-8 rounded-lg shadow-md mb-6">
-            <p className="text-lg text-gray-700 mb-6">
+          <div className="bg-[#F5F0E8] p-8 rounded-lg shadow-md mb-6 border border-black/10">
+            <p className="text-lg text-black mb-6">
               Professional supervision for behavior analysts and technicians pursuing certification or maintaining credentials. We provide competency assessments, ethics guidance, and clinical quality assurance to ensure the highest standards of practice.
             </p>
             
-            <h2 className="text-xl font-semibold mb-3" style={{ color: '#000000' }}>Who It Supports</h2>
-            <ul className="space-y-2 text-gray-700 mb-6">
+            <h2 className="text-xl font-semibold mb-3" style={{ color: '#D4AF37' }}>Who It Supports</h2>
+            <ul className="space-y-2 text-black mb-6">
               <li className="flex items-start">
                 <span className="mr-2 mt-1" style={{ color: '#D4AF37' }}>•</span>
                 <span>BCBA candidates pursuing certification</span>
@@ -42,7 +42,7 @@ export default function Supervision() {
           </div>
 
           <div className="text-center">
-            <Link to="/" className="text-gray-600 transition-colors" style={{ textDecoration: 'none' }}>
+            <Link to="/" className="text-black hover:text-[#D4AF37] transition-colors" style={{ textDecoration: 'none' }}>
               ← Back to Home
             </Link>
           </div>

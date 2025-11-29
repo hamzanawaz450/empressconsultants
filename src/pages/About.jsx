@@ -59,28 +59,28 @@ export default function About() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#F5F0E8]">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-50 to-primary-100 section-padding">
+      <section className="bg-gradient-to-br from-[#F5F0E8] to-[#EFE9E3] section-padding">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">About Us</h1>
-          <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-black">About Us</h1>
+          <p className="text-base sm:text-lg md:text-xl text-black max-w-3xl mx-auto">
             Delivering ethical, evidence-based behavioral interventions that enhance independence, dignity, and inclusion.
           </p>
         </div>
       </section>
 
       {/* Quick Links */}
-      <section className="py-12 px-4 bg-white">
+      <section className="py-12 px-4 bg-[#EFE9E3]">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6">What defines us:</h2>
+          <h2 className="text-3xl font-bold mb-6 text-black">What defines us:</h2>
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <ul className="space-y-4">
               {principles.slice(0, 4).map((principle) => (
                 <li key={principle.id} className="flex items-start">
                   <span className="mr-4 text-2xl">🧩</span>
                   <button
-                    className="text-lg underline text-gray-700 hover:text-gray-900 text-left"
+                    className="text-lg underline text-black hover:text-[#D4AF37] text-left"
                     onClick={() => handleScrollToCard(principle.id)}
                   >
                     {principle.title}
@@ -93,7 +93,7 @@ export default function About() {
                 <li key={principle.id} className="flex items-start">
                   <span className="mr-4 text-2xl">🧩</span>
                   <button
-                    className="text-lg underline text-gray-700 hover:text-gray-900 text-left"
+                    className="text-lg underline text-black hover:text-[#D4AF37] text-left"
                     onClick={() => handleScrollToCard(principle.id)}
                   >
                     {principle.title}
@@ -106,17 +106,17 @@ export default function About() {
       </section>
 
       {/* Mission */}
-      <section id="mission" className="py-12 px-4 bg-gray-50">
+      <section id="mission" className="py-12 px-4 bg-[#F5F0E8]">
         <div className="max-w-6xl mx-auto">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Our Mission</h2>
-            <p className="text-base sm:text-lg text-gray-700 mb-6 sm:mb-8">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-black">Our Mission</h2>
+            <p className="text-base sm:text-lg text-black mb-6 sm:mb-8">
               At Empress Consultants, our mission is to deliver compassionate, evidence-based Applied Behavior Analysis and educational services that transform potential into progress.
             </p>
-            <p className="text-base sm:text-lg text-gray-700 mb-6 sm:mb-8">
+            <p className="text-base sm:text-lg text-black mb-6 sm:mb-8">
               Guided by the principles of ABA—<strong>individualization, data-driven decision making, functional assessment, reinforcement, and across settings</strong>—we design interventions that honor each child's strengths and empower families to sustain meaningful growth across all environments.
             </p>
-            <p className="text-base sm:text-lg text-gray-700">
+            <p className="text-base sm:text-lg text-black">
               Our commitment is to <strong>ethical practice, measurable outcomes, and human dignity</strong>, ensuring that every program we build is as unique as the child it serves.
             </p>
           </div>
@@ -124,11 +124,11 @@ export default function About() {
       </section>
 
       {/* Vision */}
-      <section id="vision" className="py-12 px-4 bg-white">
+      <section id="vision" className="py-12 px-4 bg-[#EFE9E3]">
         <div className="max-w-6xl mx-auto">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Vision Statement (ABA-Framed)</h2>
-            <p className="text-base sm:text-lg md:text-xl text-gray-700 italic">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-black">Vision Statement (ABA-Framed)</h2>
+            <p className="text-base sm:text-lg md:text-xl text-black italic">
               To integrate the science of Applied Behavior Analysis with the art of compassionate teaching—creating a world where every learner develops independence, communication, and confidence through individualized, data-driven support.
             </p>
           </div>
@@ -136,28 +136,28 @@ export default function About() {
       </section>
 
       {/* Detailed Principles Sections */}
-      <section className="py-12 px-4 bg-gradient-to-br from-gray-50 to-gray-100">
+      <section className="py-12 px-4 bg-gradient-to-br from-[#F5F0E8] to-[#EFE9E3]">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">Our Core Principles</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12 text-black">Our Core Principles</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
             {principles.map((principle, index) => (
               <div
                 key={principle.id}
                 id={`principle-${principle.id}`}
-                className={`bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border-t-4 hover:scale-105 transform ${
-                  activeCard === principle.id ? 'ring-4 ring-yellow-400 scale-105' : ''
+                className={`bg-[#F5F0E8] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border-t-4 hover:scale-105 transform border border-black/10 ${
+                  activeCard === principle.id ? 'ring-4 ring-[#D4AF37] scale-105' : ''
                 }`}
                 style={{ borderTopColor: '#D4AF37' }}
               >
                 <div className="flex items-center mb-4">
                   <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 mr-3" style={{ backgroundColor: '#D4AF37' }}>
-                    <span className="text-white font-bold">{index + 1}</span>
+                    <span className="text-black font-bold">{index + 1}</span>
                   </div>
-                  <h3 className="text-lg sm:text-xl font-bold text-gray-800">
+                  <h3 className="text-lg sm:text-xl font-bold text-black">
                     {principle.title}
                   </h3>
                 </div>
-                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+                <p className="text-sm sm:text-base text-black leading-relaxed">
                   {principle.fullDesc}
                 </p>
               </div>
@@ -167,23 +167,23 @@ export default function About() {
       </section>
 
       {/* Team */}
-      <section id="team" className="py-12 px-4 bg-gray-50">
+      <section id="team" className="py-12 px-4 bg-[#F5F0E8]">
         <div className="max-w-6xl mx-auto">
-          <div className="max-w-2xl mx-auto bg-white p-4 sm:p-6 md:p-8 rounded-lg shadow-md">
+          <div className="max-w-2xl mx-auto bg-[#EFE9E3] p-4 sm:p-6 md:p-8 rounded-lg shadow-md border border-black/10">
             <div className="flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-6 mb-6">
               <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: '#D4AF37' }}>
-                <span className="text-white text-2xl sm:text-3xl font-bold">MT</span>
+                <span className="text-black text-2xl sm:text-3xl font-bold">MT</span>
               </div>
               <div className="text-center sm:text-left">
-                <h3 className="text-xl sm:text-2xl font-bold">Maria Torres, BCBA, LBA-NY</h3>
-                <p className="text-sm sm:text-base text-gray-600">Founder & CEO, Empress-Consultants, LLC</p>
+                <h3 className="text-xl sm:text-2xl font-bold text-black">Maria Torres, BCBA, LBA-NY</h3>
+                <p className="text-sm sm:text-base text-black/70">Founder & CEO, Empress-Consultants, LLC</p>
               </div>
             </div>
-            <div className="border-t pt-6">
-              <p className="text-gray-700 mb-4">
+            <div className="border-t border-black/20 pt-6">
+              <p className="text-black mb-4">
                 <strong>Phone:</strong> (646) 769-0706
               </p>
-              <p className="text-gray-700">
+              <p className="text-black">
                 <strong>Email:</strong> info.empressconsultants@gmail.com
               </p>
             </div>
@@ -192,21 +192,21 @@ export default function About() {
       </section>
 
       {/* Values */}
-      <section className="py-12 px-4 bg-white">
+      <section className="py-12 px-4 bg-[#EFE9E3]">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">Our Values</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-black">Our Values</h2>
           <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
             <div className="text-center">
               <h3 className="text-xl font-semibold mb-2" style={{ color: '#D4AF37' }}>Integrity</h3>
-              <p className="text-gray-700">Ethical practice in all we do</p>
+              <p className="text-black">Ethical practice in all we do</p>
             </div>
             <div className="text-center">
               <h3 className="text-xl font-semibold mb-2" style={{ color: '#D4AF37' }}>Data Accuracy</h3>
-              <p className="text-gray-700">Evidence-based decision making</p>
+              <p className="text-black">Evidence-based decision making</p>
             </div>
             <div className="text-center">
               <h3 className="text-xl font-semibold mb-2" style={{ color: '#D4AF37' }}>Cultural Competence</h3>
-              <p className="text-gray-700">Respectful, inclusive service delivery</p>
+              <p className="text-black">Respectful, inclusive service delivery</p>
             </div>
           </div>
         </div>

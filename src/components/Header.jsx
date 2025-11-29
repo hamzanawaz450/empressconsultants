@@ -5,7 +5,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="shadow-md top-0 z-50 bg-white">
+    <header className="shadow-md top-0 z-50 bg-[#EFE9E3]">
       {/* Top: Large logo row */}
       <div className="container-custom py-4">
         <div className="flex flex-col items-center justify-center relative">
@@ -15,7 +15,7 @@ export default function Header() {
               alt="Empress Consultants Logo"
               className="w-28 h-28 md:w-36 md:h-36 object-contain"
             />
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center" >
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-black" >
              The Empress Consultants
             </h1>
           </Link>
@@ -30,19 +30,19 @@ export default function Header() {
             >
               <div className="w-6 h-6 flex flex-col justify-center items-center">
                 <span
-                  className={`bg-gray-700 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
+                  className={`bg-black block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
                     isMenuOpen
                       ? "rotate-45 translate-y-1.5"
                       : "-translate-y-0.5"
                   }`}
                 ></span>
                 <span
-                  className={`bg-gray-700 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${
+                  className={`bg-black block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${
                     isMenuOpen ? "opacity-0" : "opacity-100"
                   }`}
                 ></span>
                 <span
-                  className={`bg-gray-700 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
+                  className={`bg-black block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
                     isMenuOpen
                       ? "-rotate-45 -translate-y-1.5"
                       : "translate-y-0.5"
@@ -55,7 +55,7 @@ export default function Header() {
       </div>
 
       {/* Bottom: Navigation bar (desktop and mobile collapsed) */}
-      <nav className="border-t border-gray-200">
+      <nav className="border-t border-black/20">
         <div className="container-custom">
           <div
             className="hidden md:flex items-center justify-evenly
@@ -63,20 +63,20 @@ export default function Header() {
           >
             <Link
               to="/home"
-              className="px-6 py-3 text-gray-700 hover:text-primary-600 transition-colors duration-200"
+              className="px-6 py-3 text-black hover:text-[#D4AF37] transition-colors duration-200"
             >
               Home
             </Link>
             <Link
               to="/about"
-              className="px-6 py-3 text-gray-700 hover:text-primary-600 transition-colors duration-200"
+              className="px-6 py-3 text-black hover:text-[#D4AF37] transition-colors duration-200"
             >
               About
             </Link>
             <div className="relative group">
               <Link
                 to="/services"
-                className="px-6 py-3 text-gray-700 hover:text-primary-600 transition-colors duration-200 flex items-center gap-1"
+                className="px-6 py-3 text-black hover:text-[#D4AF37] transition-colors duration-200 flex items-center gap-1"
               >
                 Services
                 <svg
@@ -93,34 +93,34 @@ export default function Header() {
                   />
                 </svg>
               </Link>
-              <div className="absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div className="absolute left-0 mt-2 w-64 bg-[#EFE9E3] rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-black/10">
                 <Link
                   to="/services/aba-therapy"
-                  className="block px-4 py-3 text-gray-700 hover:bg-primary-50 hover:text-primary-600 transition-colors duration-200"
+                  className="block px-4 py-3 text-black hover:bg-[#F5F0E8] hover:text-[#D4AF37] transition-colors duration-200"
                 >
                   ABA Therapy
                 </Link>
                 <Link
                   to="/services/supervision"
-                  className="block px-4 py-3 text-gray-700 hover:bg-primary-50 hover:text-primary-600 transition-colors duration-200"
+                  className="block px-4 py-3 text-black hover:bg-[#F5F0E8] hover:text-[#D4AF37] transition-colors duration-200"
                 >
                   Supervision (BCBA/LBA)
                 </Link>
                 <Link
                   to="/services/parent-training"
-                  className="block px-4 py-3 text-gray-700 hover:bg-primary-50 hover:text-primary-600 transition-colors duration-200"
+                  className="block px-4 py-3 text-black hover:bg-[#F5F0E8] hover:text-[#D4AF37] transition-colors duration-200"
                 >
                   Parent Training
                 </Link>
                 <Link
                   to="/services/impartial-hearing"
-                  className="block px-4 py-3 text-gray-700 hover:bg-primary-50 hover:text-primary-600 transition-colors duration-200"
+                  className="block px-4 py-3 text-black hover:bg-[#F5F0E8] hover:text-[#D4AF37] transition-colors duration-200"
                 >
                   Impartial Hearing Support
                 </Link>
                 <Link
                   to="/services/related-services"
-                  className="block px-4 py-3 text-gray-700 hover:bg-primary-50 hover:text-primary-600 transition-colors duration-200"
+                  className="block px-4 py-3 text-black hover:bg-[#F5F0E8] hover:text-[#D4AF37] transition-colors duration-200"
                 >
                   Related Service Coordination
                 </Link>
@@ -133,59 +133,59 @@ export default function Header() {
 
           {/* Mobile Navigation with Slide Animation (same as before) */}
           <div
-            className={`md:hidden border-t border-gray-200 overflow-hidden transition-all duration-300 ease-in-out ${
+            className={`md:hidden border-t border-black/20 overflow-hidden transition-all duration-300 ease-in-out ${
               isMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
             }`}
           >
             <div className="px-4 py-4 space-y-1">
               <Link
                 to="/home"
-                className="block py-3 px-4 text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-all duration-200 transform hover:translate-x-1"
+                className="block py-3 px-4 text-black hover:text-[#D4AF37] hover:bg-[#F5F0E8] rounded-lg transition-all duration-200 transform hover:translate-x-1"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
               </Link>
               <Link
                 to="/about"
-                className="block py-3 px-4 text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-all duration-200 transform hover:translate-x-1"
+                className="block py-3 px-4 text-black hover:text-[#D4AF37] hover:bg-[#F5F0E8] rounded-lg transition-all duration-200 transform hover:translate-x-1"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
               </Link>
-              <div className="py-2 px-4 text-sm font-semibold text-gray-500">
+              <div className="py-2 px-4 text-sm font-semibold text-[#D4AF37]">
                 Services
               </div>
               <Link
                 to="/services/aba-therapy"
-                className="block py-2 px-6 text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-all duration-200"
+                className="block py-2 px-6 text-black hover:text-[#D4AF37] hover:bg-[#F5F0E8] rounded-lg transition-all duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
                 ABA Therapy
               </Link>
               <Link
                 to="/services/supervision"
-                className="block py-2 px-6 text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-all duration-200"
+                className="block py-2 px-6 text-black hover:text-[#D4AF37] hover:bg-[#F5F0E8] rounded-lg transition-all duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Supervision (BCBA/LBA)
               </Link>
               <Link
                 to="/services/parent-training"
-                className="block py-2 px-6 text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-all duration-200"
+                className="block py-2 px-6 text-black hover:text-[#D4AF37] hover:bg-[#F5F0E8] rounded-lg transition-all duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Parent Training
               </Link>
               <Link
                 to="/services/impartial-hearing"
-                className="block py-2 px-6 text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors duration-200"
+                className="block py-2 px-6 text-black hover:text-[#D4AF37] hover:bg-[#F5F0E8] rounded-lg transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Impartial Hearing Support
               </Link>
               <Link
                 to="/services/related-services"
-                className="block py-2 px-6 text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors duration-200"
+                className="block py-2 px-6 text-black hover:text-[#D4AF37] hover:bg-[#F5F0E8] rounded-lg transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Related Service Coordination
