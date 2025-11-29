@@ -9,32 +9,79 @@ export default function ABATherapy() {
             ABA Therapy
           </h1>
           
-          <div className="bg-white p-8 rounded-lg shadow-md mb-6">
-            <p className="text-lg text-gray-700 mb-6">
-              Evidence-based Applied Behavior Analysis delivered by Board Certified Behavior Analysts. We provide individualized programming with functional assessments, data-driven interventions, and continuous progress monitoring across home, school, and community settings.
+       <div className="bg-white p-8 rounded-lg shadow-md mb-6">
+            <p className="text-gray-700 mb-6 leading-relaxed">
+              At Empress Consultants, we utilize <strong>Applied Behavior Analysis (ABA)</strong>—the leading, research-supported methodology shown to create meaningful, lasting behavior change for individuals with autism and related developmental needs. ABA focuses on building socially significant skills across communication, social development, academics, adaptive functioning, and daily living.
             </p>
             
-            <h2 className="text-xl font-semibold mb-3" style={{ color: '#000000' }}>Who Benefits</h2>
-            <ul className="space-y-2 text-gray-700 mb-6">
-              <li className="flex items-start">
-                <span className="mr-2 mt-1" style={{ color: '#D4AF37' }}>•</span>
-                <span>Children with autism spectrum disorder</span>
-              </li>
-              <li className="flex items-start">
-                <span className="mr-2 mt-1" style={{ color: '#D4AF37' }}>•</span>
-                <span>Students with developmental delays or behavioral challenges</span>
-              </li>
-              <li className="flex items-start">
-                <span className="mr-2 mt-1" style={{ color: '#D4AF37' }}>•</span>
-                <span>Families seeking skill-building and behavior support</span>
-              </li>
-            </ul>
+            <p className="text-gray-700 mb-6 leading-relaxed">
+              Our approach incorporates evidence-based ABA methods such as <strong>Natural Environment Teaching (NET)</strong>, <strong>Discrete Trial Training (DTT)</strong>, <strong>Incidental Teaching</strong>, and individualized <strong>Behavior Management strategies</strong>. Each intervention is designed by analyzing antecedents, behaviors, and consequences to promote positive and functional behavior change.
+            </p>
 
-            <div className="text-center">
+            <p className="text-gray-700 mb-8 leading-relaxed">
+              Although all ABA programs stem from the same scientific principles and the 7 Dimensions of ABA, every child's plan is highly individualized. We consider each learner's strengths, challenges, motivation, and learning style to create a programming path tailored specifically to their needs.
+            </p>
+
+            <h2 className="text-2xl font-bold mb-6" style={{ color: '#000000' }}>
+              The 7 Dimensions of ABA
+            </h2>
+
+            <div className="space-y-6 mb-8">
+              <div>
+                <h3 className="text-xl font-semibold mb-2" style={{ color: '#000000' }}>Applied</h3>
+                <p className="text-gray-700">
+                  Goals must be socially meaningful and relevant to the child's life.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold mb-2" style={{ color: '#000000' }}>Behavioral</h3>
+                <p className="text-gray-700">
+                  Targets focus on observable, measurable actions to ensure clarity and consistency.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold mb-2" style={{ color: '#000000' }}>Analytic</h3>
+                <p className="text-gray-700">
+                  Data is collected continuously and used to guide decision-making during every ABA session.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold mb-2" style={{ color: '#000000' }}>Effective</h3>
+                <p className="text-gray-700">
+                  Interventions are monitored for demonstrated improvement. If data show limited progress, strategies are revised to ensure success.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold mb-2" style={{ color: '#000000' }}>Generalization</h3>
+                <p className="text-gray-700">
+                  Skills must transfer across people, materials, environments, and situations. Our programs prioritize generalization to ensure long-term functional use.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold mb-2" style={{ color: '#000000' }}>Technological</h3>
+                <p className="text-gray-700">
+                  Procedures are clearly defined and replicable, allowing for consistent implementation across settings and providers.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold mb-2" style={{ color: '#000000' }}>Conceptually Systematic</h3>
+                <p className="text-gray-700">
+                  All interventions are rooted in established principles of behavior analysis and learning theory.
+                </p>
+              </div>
+            </div>
+
+            {/* <div className="text-center">
               <Link to="/contact" className="btn-primary inline-block text-lg px-8 py-3">
                 Request ABA Services
               </Link>
-            </div>
+            </div> */}
           </div>
 
           <div className="text-center">
@@ -47,5 +94,6 @@ export default function ABATherapy() {
     </div>
   );
 }
+
 
 

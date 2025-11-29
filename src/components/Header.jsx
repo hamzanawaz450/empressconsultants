@@ -8,18 +8,20 @@ export default function Header() {
     <header className="shadow-md top-0 z-50 bg-white">
       {/* Top: Large logo row */}
       <div className="container-custom py-4">
-        <div className="flex items-center justify-center md:justify-start">
-          <Link to="/" className="flex items-center space-x-4 group">
+        <div className="flex flex-col items-center justify-center relative">
+          <Link to="/" className="flex flex-col items-center group">
             <img
               src="/main logo.jpeg"
               alt="Empress Consultants Logo"
               className="w-28 h-28 md:w-36 md:h-36 object-contain"
             />
-        
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center" >
+             The Empress Consultants
+            </h1>
           </Link>
 
           {/* Mobile Menu Button stays on the right for small screens */}
-          <div className="flex-1 flex items-center justify-end md:hidden">
+          <div className="absolute right-0 md:hidden">
             <button
               className="p-2 relative z-50 focus:outline-none"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -60,7 +62,7 @@ export default function Header() {
  h-12 px-2"
           >
             <Link
-              to="/"
+              to="/home"
               className="px-6 py-3 text-gray-700 hover:text-primary-600 transition-colors duration-200"
             >
               Home
@@ -137,7 +139,7 @@ export default function Header() {
           >
             <div className="px-4 py-4 space-y-1">
               <Link
-                to="/"
+                to="/home"
                 className="block py-3 px-4 text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-all duration-200 transform hover:translate-x-1"
                 onClick={() => setIsMenuOpen(false)}
               >

@@ -1,36 +1,43 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 export default function Services() {
+  const [activeCard, setActiveCard] = useState(null);
+
+  const handleScrollToCard = (id) => {
+    setActiveCard(id);
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    
+    // Remove highlight after 2 seconds
+    setTimeout(() => {
+      setActiveCard(null);
+    }, 2000);
+  };
+
   const services = [
     {
       title: "ABA Therapy",
       description: "Functional assessments, individualized program design, BCBA supervision, and continuous data review across home, school, and community settings.",
-      image: "/iStock-1151510733.jpg",
       link: "/services/aba-therapy"
     },
     {
       title: "Parent Training",
       description: "Coaching and digital modules that teach reinforcement strategies, structure, and consistency within everyday routines.",
-      image: "/iStock-1282884529.jpg",
       link: "/services/parent-training"
     },
     {
       title: "Supervision & Professional Development",
       description: "Comprehensive BCBA/RBT supervision, competency assessment, and ethics guidance to ensure clinical quality.",
-      image: "/iStock-1332728408.jpg",
       link: "/services/supervision"
     },
     {
       title: "Related Services",
       description: "Integrated collaboration among Speech, OT, PT, and SETSS professionals to support academic and behavioral progress.",
-      image: "/iStock-1357352061.jpg",
       link: "/services/related-services"
-    }
-    ,
+    },
     {
       title: "Impartial Hearing Support",
       description: "Expert implementation of Findings of Fact and Decision (FOFD) and Impartial Hearing Officer (IHO) orders. We provide clinical documentation, expert testimony, and compliance support for families navigating the legal process to secure appropriate educational services.",
-      image: "/iStock-1256025624.jpg",
       link: "/services/impartial-hearing"
     }
   ];
@@ -67,7 +74,7 @@ export default function Services() {
                         <span className="mr-4 text-2xl" >🧩</span>
                         <button
                           className="text-lg underline text-gray-700 hover:text-gray-900 text-left"
-                          onClick={() => document.getElementById(s.link.replace('/services/', ''))?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                          onClick={() => handleScrollToCard(s.link.replace('/services/', ''))}
                         >
                           {s.title}
                         </button>
@@ -80,7 +87,7 @@ export default function Services() {
                         <span className="mr-4 text-2xl" >🧩</span>
                         <button
                           className="text-lg underline text-gray-700 hover:text-gray-900 text-left"
-                          onClick={() => document.getElementById(s.link.replace('/services/', ''))?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                          onClick={() => handleScrollToCard(s.link.replace('/services/', ''))}
                         >
                           {s.title}
                         </button>
@@ -95,25 +102,37 @@ export default function Services() {
       </section>
 
       {/* Detailed Service Sections (anchors) - in-page only (no separate pages) */}
-      <section className="section-padding bg-[#EFE9E3]">
-        <div className="container-custom max-w-6xl">
-          {services.map((service) => {
-            const id = service.link.replace('/services/', '');
-            return (
-              <div key={service.title} id={id} className="bg-white rounded-lg shadow-md mb-8 overflow-hidden">
-                <div className="grid md:grid-cols-2">
-                  <div className="h-56 md:h-auto">
-                    <img src={service.image} alt={service.title} className="w-full h-full object-cover" />
+      <section className="section-padding bg-gradient-to-br from-gray-50 to-gray-100">
+        <div className="container-custom max-w-7xl">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">Our Services</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
+            {services.map((service, index) => {
+              const id = service.link.replace('/services/', '');
+              return (
+                <div
+                  key={service.title}
+                  id={id}
+                  className={`bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border-t-4 hover:scale-105 transform ${
+                    activeCard === id ? 'ring-4 ring-yellow-400 scale-105' : ''
+                  }`}
+                  style={{ borderTopColor: '#D4AF37' }}
+                >
+                  <div className="flex items-center mb-4">
+                    <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 mr-3" style={{ backgroundColor: '#D4AF37' }}>
+                      <span className="text-white font-bold">{index + 1}</span>
+                    </div>
+                    <h3 className="text-lg sm:text-xl font-bold text-gray-800">
+                      {service.title}
+                    </h3>
                   </div>
-                  <div className="p-6">
-                    <h3 className="text-2xl font-bold mb-3" >{service.title}</h3>
-                    <p className="text-gray-700 mb-4">{service.description}</p>
-                    <Link to={service.link} className="btn-secondary inline-block">Read More</Link>
-                  </div>
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed mb-4">
+                    {service.description}
+                  </p>
+                  <Link to={service.link} className="btn-secondary inline-block">Read More</Link>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
       </section>
 
