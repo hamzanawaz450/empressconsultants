@@ -2,26 +2,28 @@ import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#EFE9E3] text-black">
+    <footer className="bg-[#EFE9E3] text-black border-t border-black/20">
       <div className="container-custom section-padding">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
           {/* Company Info */}
-          <div className="sm:col-span-2 md:col-span-1">
-            <div className="flex items-center space-x-2 mb-4">
+          <div className="md:col-span-1 pr-4">
+            <div className="flex items-start space-x-4">
               <img 
                 src="/main logo.jpeg" 
                 alt="Empress Consultants Logo" 
-                className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
+                className="w-16 h-16 sm:w-20 sm:h-20 object-contain flex-shrink-0"
               />
-              <span className="text-lg sm:text-xl text-black font-bold">Empress Consultants</span>
+              <div className="flex-1 min-w-0">
+                <p className="text-black font-semibold text-sm sm:text-base mb-1">Maria Torres, BCBA, LBA-NY</p>
+                <p className="text-black/70 text-xs sm:text-sm mb-2">Founder & CEO, Empress-Consultants, LLC</p>
+                <p className="text-black text-xs sm:text-sm mb-2 break-words">(646) 769-0706 | info.empressconsultants@gmail.com</p>
+                <p className="text-black/70 text-xs sm:text-sm italic break-words">Evidence-Based ABA & Related Services for Children Across NEW YORK</p>
+              </div>
             </div>
-            <p className="text-black/70 text-sm">
-              Evidence-Based ABA and Related Services for Children Across New York
-            </p>
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="pl-0 md:pl-4">
             <h3 className="font-semibold mb-4 text-black">Quick Links</h3>
             <ul className="space-y-2 text-sm text-black/70">
               <li><Link to="/services" className="hover:text-[#D4AF37] transition">Services</Link></li>
@@ -31,7 +33,7 @@ export default function Footer() {
           </div>
 
           {/* Contact */}
-          <div>
+          <div className="pl-0 md:pl-4">
             <h3 className="font-semibold mb-4 text-black">Contact</h3>
             <ul className="space-y-2 text-sm text-black/70">
               <li>Phone: (646) 769-0706</li>
@@ -41,7 +43,7 @@ export default function Footer() {
           </div>
 
           {/* Legal */}
-          <div>
+          <div className="pl-0 md:pl-4">
             <h3 className="font-semibold mb-4 text-black">Legal</h3>
             <ul className="space-y-2 text-sm text-black/70">
               <li><Link to="/compliance" className="hover:text-[#D4AF37] transition">Compliance & Privacy</Link></li>

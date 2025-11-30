@@ -166,31 +166,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Team */}
-      <section id="team" className="py-12 px-4 bg-[#F5F0E8]">
-        <div className="max-w-6xl mx-auto">
-          <div className="max-w-2xl mx-auto bg-[#EFE9E3] p-4 sm:p-6 md:p-8 rounded-lg shadow-md border border-black/10">
-            <div className="flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-6 mb-6">
-              <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: '#D4AF37' }}>
-                <span className="text-black text-2xl sm:text-3xl font-bold">MT</span>
-              </div>
-              <div className="text-center sm:text-left">
-                <h3 className="text-xl sm:text-2xl font-bold text-black">Maria Torres, BCBA, LBA-NY</h3>
-                <p className="text-sm sm:text-base text-black/70">Founder & CEO, Empress-Consultants, LLC</p>
-              </div>
-            </div>
-            <div className="border-t border-black/20 pt-6">
-              <p className="text-black mb-4">
-                <strong>Phone:</strong> (646) 769-0706
-              </p>
-              <p className="text-black">
-                <strong>Email:</strong> info.empressconsultants@gmail.com
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Values */}
       <section className="py-12 px-4 bg-[#EFE9E3]">
         <div className="max-w-6xl mx-auto text-center">

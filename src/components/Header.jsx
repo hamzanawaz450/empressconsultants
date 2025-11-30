@@ -16,7 +16,7 @@ export default function Header() {
               className="w-28 h-28 md:w-36 md:h-36 object-contain"
             />
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-black" >
-             The Empress Consultants
+            Empress Consultants
             </h1>
           </Link>
 
