@@ -42,13 +42,13 @@ export default function Contact() {
       <section className="section-padding bg-[#EFE9E3]">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
-            <div className="bg-[#F5F0E8] p-4 rounded-lg mb-6 sm:mb-8 mx-4 sm:mx-0 border border-black/10">
+            <div className="bg-[#F5F0E8] p-6 rounded-lg mb-6 border-t-4 border border-black/10" style={{ borderTopColor: '#D4AF37' }}>
               <p className="text-xs sm:text-sm text-black">
                 <strong>Secure Form:</strong> No PHI beyond initial intake required. Your information is protected and will be routed to the appropriate team (clinical, legal, or administrative).
               </p>
             </div>
 
-            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6 bg-[#F5F0E8] p-4 sm:p-6 md:p-8 rounded-lg shadow-md mx-4 sm:mx-0 border border-black/10">
+            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6 bg-[#F5F0E8] border-t-4 p-4 sm:p-6 md:p-8 rounded-lg shadow-md mx-4 sm:mx-0 border border-black/10" style={{ borderTopColor: '#D4AF37' }}>
               <div>
                 <label className="block text-sm font-medium text-black mb-2">
                   I am a: <span className="text-[#D4AF37]">*</span>
