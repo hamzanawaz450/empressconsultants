@@ -5,7 +5,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="shadow-md top-0 z-50 bg-[#EFE9E3]">
+    <header className="shadow-md top-0 z-50 bg-black">
       {/* Top: Large logo row */}
       <div className="container-custom py-4">
         <div className="flex flex-col items-center justify-center relative">
@@ -15,7 +15,7 @@ export default function Header() {
               alt="Empress Consultants Logo"
               className="w-28 h-28 md:w-36 md:h-36 object-contain"
             />
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-black" >
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center" style={{ color: '#f0dab1' }}>
             Empress Consultants
             </h1>
           </Link>
@@ -30,23 +30,26 @@ export default function Header() {
             >
               <div className="w-6 h-6 flex flex-col justify-center items-center">
                 <span
-                  className={`bg-black block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
+                  className={`block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
                     isMenuOpen
                       ? "rotate-45 translate-y-1.5"
                       : "-translate-y-0.5"
                   }`}
+                  style={{ backgroundColor: '#f0dab1' }}
                 ></span>
                 <span
-                  className={`bg-black block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${
+                  className={`block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${
                     isMenuOpen ? "opacity-0" : "opacity-100"
                   }`}
+                  style={{ backgroundColor: '#f0dab1' }}
                 ></span>
                 <span
-                  className={`bg-black block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
+                  className={`block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
                     isMenuOpen
                       ? "-rotate-45 -translate-y-1.5"
                       : "translate-y-0.5"
                   }`}
+                  style={{ backgroundColor: '#f0dab1' }}
                 ></span>
               </div>
             </button>
@@ -55,7 +58,7 @@ export default function Header() {
       </div>
 
       {/* Bottom: Navigation bar (desktop and mobile collapsed) */}
-      <nav className="border-t border-black/20">
+      <nav className="border-t" style={{ borderColor: 'rgba(240, 218, 177, 0.2)' }}>
         <div className="container-custom">
           <div
             className="hidden md:flex items-center justify-evenly
@@ -63,20 +66,23 @@ export default function Header() {
           >
             <Link
               to="/home"
-              className="px-6 py-3 text-black hover:text-[#D4AF37] transition-colors duration-200"
+              className="px-6 py-3 hover:text-[#D4AF37] transition-colors duration-200"
+              style={{ color: '#f0dab1' }}
             >
               Home
             </Link>
             <Link
               to="/about"
-              className="px-6 py-3 text-black hover:text-[#D4AF37] transition-colors duration-200"
+              className="px-6 py-3 hover:text-[#D4AF37] transition-colors duration-200"
+              style={{ color: '#f0dab1' }}
             >
               About
             </Link>
             <div className="relative group">
               <Link
                 to="/services"
-                className="px-6 py-3 text-black hover:text-[#D4AF37] transition-colors duration-200 flex items-center gap-1"
+                className="px-6 py-3 hover:text-[#D4AF37] transition-colors duration-200 flex items-center gap-1"
+                style={{ color: '#f0dab1' }}
               >
                 Services
                 <svg
@@ -133,21 +139,24 @@ export default function Header() {
 
           {/* Mobile Navigation with Slide Animation (same as before) */}
           <div
-            className={`md:hidden border-t border-black/20 overflow-hidden transition-all duration-300 ease-in-out ${
+            className={`md:hidden border-t overflow-hidden transition-all duration-300 ease-in-out ${
               isMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
             }`}
+            style={{ borderColor: 'rgba(240, 218, 177, 0.2)' }}
           >
             <div className="px-4 py-4 space-y-1">
               <Link
                 to="/home"
-                className="block py-3 px-4 text-black hover:text-[#D4AF37] hover:bg-[#F5F0E8] rounded-lg transition-all duration-200 transform hover:translate-x-1"
+                className="block py-3 px-4 hover:text-[#D4AF37] hover:bg-white/10 rounded-lg transition-all duration-200 transform hover:translate-x-1"
+                style={{ color: '#f0dab1' }}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
               </Link>
               <Link
                 to="/about"
-                className="block py-3 px-4 text-black hover:text-[#D4AF37] hover:bg-[#F5F0E8] rounded-lg transition-all duration-200 transform hover:translate-x-1"
+                className="block py-3 px-4 hover:text-[#D4AF37] hover:bg-white/10 rounded-lg transition-all duration-200 transform hover:translate-x-1"
+                style={{ color: '#f0dab1' }}
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
@@ -157,35 +166,40 @@ export default function Header() {
               </div>
               <Link
                 to="/services/aba-therapy"
-                className="block py-2 px-6 text-black hover:text-[#D4AF37] hover:bg-[#F5F0E8] rounded-lg transition-all duration-200"
+                className="block py-2 px-6 hover:text-[#D4AF37] hover:bg-white/10 rounded-lg transition-all duration-200"
+                style={{ color: '#f0dab1' }}
                 onClick={() => setIsMenuOpen(false)}
               >
                 ABA Therapy
               </Link>
               <Link
                 to="/services/supervision"
-                className="block py-2 px-6 text-black hover:text-[#D4AF37] hover:bg-[#F5F0E8] rounded-lg transition-all duration-200"
+                className="block py-2 px-6 hover:text-[#D4AF37] hover:bg-white/10 rounded-lg transition-all duration-200"
+                style={{ color: '#f0dab1' }}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Supervision (BCBA/LBA)
               </Link>
               <Link
                 to="/services/parent-training"
-                className="block py-2 px-6 text-black hover:text-[#D4AF37] hover:bg-[#F5F0E8] rounded-lg transition-all duration-200"
+                className="block py-2 px-6 hover:text-[#D4AF37] hover:bg-white/10 rounded-lg transition-all duration-200"
+                style={{ color: '#f0dab1' }}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Parent Training
               </Link>
               <Link
                 to="/services/impartial-hearing"
-                className="block py-2 px-6 text-black hover:text-[#D4AF37] hover:bg-[#F5F0E8] rounded-lg transition-colors duration-200"
+                className="block py-2 px-6 hover:text-[#D4AF37] hover:bg-white/10 rounded-lg transition-colors duration-200"
+                style={{ color: '#f0dab1' }}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Impartial Hearing Support
               </Link>
               <Link
                 to="/services/related-services"
-                className="block py-2 px-6 text-black hover:text-[#D4AF37] hover:bg-[#F5F0E8] rounded-lg transition-colors duration-200"
+                className="block py-2 px-6 hover:text-[#D4AF37] hover:bg-white/10 rounded-lg transition-colors duration-200"
+                style={{ color: '#f0dab1' }}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Related Service Coordination
