@@ -151,7 +151,7 @@ export default function Services() {
       <section className="section-padding text-black" style={{ backgroundColor: '#D4AF37' }}>
         <div className="container-custom text-center">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">Ready to Get Started?</h2>
-          <p className="text-lg sm:text-xl mb-6 sm:mb-8 px-4" style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
+          <p className="text-lg sm:text-xl mb-6 sm:mb-8 px-4 text-black">
             Contact us to learn more about our services
           </p>
           <Link to="/contact" className="btn-secondary inline-block">

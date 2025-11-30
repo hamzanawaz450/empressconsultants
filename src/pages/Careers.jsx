@@ -28,7 +28,7 @@ export default function Careers() {
         <div className="container-custom">
           <h2 className="text-3xl font-bold text-center mb-12 text-black">Open Positions</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-[#EFE9E3] p-6 rounded-lg shadow-md border border-black/10">
+            <div className="bg-[#EFE9E3] p-6 rounded-lg shadow-md border-t-4 border border-black/10" style={{ borderTopColor: '#D4AF37' }}>
               <h3 className="text-xl font-semibold mb-3" style={{ color: '#D4AF37' }}>BCBA (Board Certified Behavior Analyst)</h3>
               <p className="text-black mb-4">
                 Lead assessment, program development, and supervision. Requires BCBA certification and NY LBA license.
@@ -41,7 +41,7 @@ export default function Careers() {
               </ul>
             </div>
 
-            <div className="bg-[#EFE9E3] p-6 rounded-lg shadow-md border border-black/10">
+            <div className="bg-[#EFE9E3] p-6 rounded-lg shadow-md border-t-4 border border-black/10" style={{ borderTopColor: '#D4AF37' }}>
               <h3 className="text-xl font-semibold mb-3" style={{ color: '#D4AF37' }}>RBT (Registered Behavior Technician)</h3>
               <p className="text-black mb-4">
                 Direct service delivery under BCBA supervision. Requires RBT certification.
@@ -54,7 +54,7 @@ export default function Careers() {
               </ul>
             </div>
 
-            <div className="bg-[#EFE9E3] p-6 rounded-lg shadow-md border border-black/10">
+            <div className="bg-[#EFE9E3] p-6 rounded-lg shadow-md border-t-4 border border-black/10" style={{ borderTopColor: '#D4AF37' }}>
               <h3 className="text-xl font-semibold mb-3" style={{ color: '#D4AF37' }}>Speech Therapist</h3>
               <p className="text-black mb-4">
                 Licensed speech-language pathologist for integrated service delivery.
@@ -66,7 +66,7 @@ export default function Careers() {
               </ul>
             </div>
 
-            <div className="bg-[#EFE9E3] p-6 rounded-lg shadow-md border border-black/10">
+            <div className="bg-[#EFE9E3] p-6 rounded-lg shadow-md border-t-4 border border-black/10" style={{ borderTopColor: '#D4AF37' }}>
               <h3 className="text-xl font-semibold mb-3" style={{ color: '#D4AF37' }}>Occupational Therapist</h3>
               <p className="text-black mb-4">
                 Licensed OT for sensory and motor skill development.
@@ -78,7 +78,7 @@ export default function Careers() {
               </ul>
             </div>
 
-            <div className="bg-[#EFE9E3] p-6 rounded-lg shadow-md md:col-span-2 border border-black/10">
+            <div className="bg-[#EFE9E3] p-6 rounded-lg shadow-md md:col-span-2 border-t-4 border border-black/10" style={{ borderTopColor: '#D4AF37' }}>
               <h3 className="text-xl font-semibold mb-3" style={{ color: '#D4AF37' }}>Special Educator (SETSS)</h3>
               <p className="text-black mb-4">
                 Special Education Teacher Support Services provider for academic support.
@@ -98,7 +98,7 @@ export default function Careers() {
         <div className="container-custom">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-8 text-black">Apply Now</h2>
-            <form className="space-y-6 bg-[#F5F0E8] p-8 rounded-lg border border-black/10">
+            <form className="space-y-6 bg-[#F5F0E8] p-8 rounded-lg border-t-4 border border-black/10" style={{ borderTopColor: '#D4AF37' }}>
               <div>
                 <label className="block text-sm font-medium text-black mb-2">Full Name</label>
                 <input 

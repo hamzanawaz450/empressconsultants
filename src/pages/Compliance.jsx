@@ -16,7 +16,7 @@ export default function Compliance() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 text-black">HIPAA Notice (Plain-Language Summary)</h2>
-            <div className="bg-[#F5F0E8] p-6 rounded-lg mb-6 border border-black/10">
+            <div className="bg-[#F5F0E8] p-6 rounded-lg mb-6 border-t-4 border border-black/10" style={{ borderTopColor: '#D4AF37' }}>
               <p className="text-black mb-4">
                 The Health Insurance Portability and Accountability Act (HIPAA) protects your health information. At Empress Consultants, we:
               </p>
@@ -56,7 +56,7 @@ export default function Compliance() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 text-black">FERPA Notice (Plain-Language Summary)</h2>
-            <div className="bg-[#EFE9E3] p-6 rounded-lg shadow-md border border-black/10">
+            <div className="bg-[#EFE9E3] p-6 rounded-lg shadow-md border-t-4 border border-black/10" style={{ borderTopColor: '#D4AF37' }}>
               <p className="text-black mb-4">
                 The Family Educational Rights and Privacy Act (FERPA) protects student education records. When we work with schools, we:
               </p>
@@ -96,7 +96,7 @@ export default function Compliance() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 text-black">Accessibility Statement</h2>
-            <div className="bg-[#F5F0E8] p-6 rounded-lg border border-black/10">
+            <div className="bg-[#F5F0E8] p-6 rounded-lg border-t-4 border border-black/10" style={{ borderTopColor: '#D4AF37' }}>
               <p className="text-black mb-4">
                 Empress Consultants is committed to ensuring digital accessibility for people with disabilities. We strive to meet WCAG 2.2 AA standards, which means our website and digital resources:
               </p>
@@ -120,7 +120,7 @@ export default function Compliance() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 text-black">Terms of Service and Data Use Policy</h2>
-            <div className="bg-[#EFE9E3] p-6 rounded-lg shadow-md space-y-4 text-black border border-black/10">
+            <div className="bg-[#EFE9E3] p-6 rounded-lg shadow-md space-y-4 text-black border-t-4 border border-black/10" style={{ borderTopColor: '#D4AF37' }}>
               <p>
                 By using our website and services, you agree to our terms of service. We collect only necessary information to provide services and do not sell your personal information to third parties.
               </p>
@@ -139,7 +139,7 @@ export default function Compliance() {
       <section className="section-padding bg-[#EFE9E3]">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="bg-[#F5F0E8] border-l-4 border-[#D4AF37] p-6 rounded-lg border border-black/10">
+            <div className="bg-[#F5F0E8] border-t-4 border-l-4 border-[#D4AF37] p-6 rounded-lg border border-black/10">
               <h3 className="text-xl font-semibold mb-2 text-black">Important Disclaimer</h3>
               <p className="text-black">
                 The content on this website is for informational purposes only and does not constitute therapeutic advice. 

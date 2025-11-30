@@ -27,6 +27,7 @@
   .btn-primary {
     @apply text-black px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold transition-all duration-200 text-sm sm:text-base transform hover:scale-105 active:scale-95;
     background-color: #D4AF37;
+    border: 2px solid #dbb134;
   }
   
   .btn-primary:hover {
@@ -34,14 +35,13 @@
   }
 
   .btn-secondary {
-    @apply px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold transition-all duration-200 text-sm sm:text-base transform hover:scale-105 active:scale-95;
-    background-color: #EFE9E3;
-    color: #000000;
-    border: 2px solid #D4AF37;
+    @apply text-black px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold transition-all duration-200 text-sm sm:text-base transform hover:scale-105 active:scale-95;
+    background-color: #D4AF37;
+    border: 2px solid #dbb134;
   }
   
   .btn-secondary:hover {
-    background-color: #F5F0E8;
+    background-color: #C9A428;
   }
 
   .section-padding {
