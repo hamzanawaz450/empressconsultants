@@ -65,7 +65,7 @@ export default function ABATherapy() {
               <div>
                 <h3 className="text-xl font-semibold mb-2" style={{ color: '#000000' }}>Technological</h3>
                 <p className="text-black">
-                  Procedures are clearly defined and replicable, allowing for consistent implementation across settings and providers.
+                  The steps used in ABA therapy are written clearly so anyone trained in ABA can follow them. This helps keep the therapy consistent across different settings and team members.
                 </p>
               </div>
 
