@@ -23,7 +23,7 @@ export default function Landing() {
       <div className="mt-4">
         <Link 
           to="/home" 
-          className="btn-cta inline-block text-lg px-8 py-4 rounded-lg"
+          className="btn inline-block text-lg px-8 py-4 rounded-lg"
         >
           Enter Homepage
         </Link>
