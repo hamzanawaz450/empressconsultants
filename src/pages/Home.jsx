@@ -145,7 +145,7 @@ export default function Home() {
           {/* Sections Grid */}
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             {/* About Us - Clickable */}
-            <Link to="/about" className="bg-[#F5F0E8] p-6 rounded-lg border-t-4 border border-black/10" style={{ borderTopColor: '#D4AF37' }}>
+            <Link to="/about" className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 group">
               <div className="flex justify-between items-start">
                 <div>
                   <h2 className="text-2xl font-bold mb-3" style={{ color: '#D4AF37' }}>About Us</h2>
@@ -160,7 +160,7 @@ export default function Home() {
             </Link>
 
             {/* Services */}
-            <Link to="/services" className="bg-[#F5F0E8] p-6 rounded-lg border-t-4 border border-black/10" style={{ borderTopColor: '#D4AF37' }}>
+            <Link to="/services" className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 group">
               <div className="flex justify-between items-start mb-4">
                 <h2 className="text-2xl font-bold" style={{ color: '#D4AF37' }}>Services</h2>
                 <svg className="w-6 h-6 flex-shrink-0 ml-4 transition-transform group-hover:translate-x-1" style={{ color: '#D4AF37' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -192,7 +192,7 @@ export default function Home() {
             </Link>
 
             {/* Who We Serve */}
-            <Link to="/who-we-serve" className="bg-[#F5F0E8] p-6 rounded-lg border-t-4 border border-black/10" style={{ borderTopColor: '#D4AF37' }}>
+            <Link to="/who-we-serve" className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 group">
               <div className="flex justify-between items-start mb-4">
                 <h2 className="text-2xl font-bold" style={{ color: '#D4AF37' }}>Who We Serve</h2>
                 <svg className="w-6 h-6 flex-shrink-0 ml-4 transition-transform group-hover:translate-x-1" style={{ color: '#D4AF37' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -216,7 +216,7 @@ export default function Home() {
             </Link>
 
             {/* Why Families Choose Us */}
-            <Link to="/why-choose-us" className="bg-[#F5F0E8] p-6 rounded-lg border-t-4 border border-black/10" style={{ borderTopColor: '#D4AF37' }}>
+            <Link to="/why-choose-us" className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 group">
               <div className="flex justify-between items-start mb-4">
                 <h2 className="text-2xl font-bold" style={{ color: '#D4AF37' }}>Why Families Choose Us</h2>
                 <svg className="w-6 h-6 flex-shrink-0 ml-4 transition-transform group-hover:translate-x-1" style={{ color: '#D4AF37' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -246,10 +246,10 @@ export default function Home() {
 
           {/* Call-to-Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contact" className="btn-primary text-center text-lg px-10 py-4">
+            <Link to="/contact" className="btn text-center text-lg px-10 py-4">
               Request Services
             </Link>
-            <Link to="/contact" className="btn-secondary text-center text-lg px-10 py-4">
+            <Link to="/contact" className="btn text-center text-lg px-10 py-4">
               Book a Consultation
             </Link>
           </div>

@@ -102,7 +102,7 @@ export default function ForSchools() {
           <p className="text-lg sm:text-xl mb-6 sm:mb-8 px-4" style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
             Request a partnership call to discuss how we can support your school
           </p>
-          <Link to="/contact" className="btn-secondary inline-block">
+          <Link to="/contact" className="btn-cta inline-block">
             Request a Partnership Call
           </Link>
         </div>

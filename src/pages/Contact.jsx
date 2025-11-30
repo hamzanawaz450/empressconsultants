@@ -192,7 +192,7 @@ export default function Contact() {
                 ></textarea>
               </div>
 
-              <button type="submit" className="btn-primary w-full">
+              <button type="submit" className="btn-cta w-full">
                 Submit Inquiry
               </button>
             </form>

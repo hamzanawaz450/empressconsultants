@@ -154,7 +154,7 @@ export default function Services() {
           <p className="text-lg sm:text-xl mb-6 sm:mb-8 px-4 text-black">
             Contact us to learn more about our services
           </p>
-          <Link to="/contact" className="btn-secondary inline-block">
+          <Link to="/contact" className="btn-cta inline-block">
             Book a Consultation
           </Link>
         </div>

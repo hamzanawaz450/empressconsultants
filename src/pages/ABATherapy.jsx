@@ -77,11 +77,11 @@ export default function ABATherapy() {
               </div>
             </div>
 
-            {/* <div className="text-center">
-              <Link to="/contact" className="btn-primary inline-block text-lg px-8 py-3">
+            <div className="text-center">
+              <Link to="/contact" className="btn-cta inline-block text-lg px-8 py-3">
                 Request ABA Services
               </Link>
-            </div> */}
+            </div>
           </div>
 
           <div className="text-center">

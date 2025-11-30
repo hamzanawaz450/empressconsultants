@@ -25,7 +25,8 @@
 
 @layer components {
   .btn-primary {
-    @apply text-black px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold transition-all duration-200 text-sm sm:text-base transform hover:scale-105 active:scale-95;
+    @apply px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold transition-all duration-200 text-sm sm:text-base transform hover:scale-105 active:scale-95;
+    color: #000000;
     background-color: #D4AF37;
     border: 2px solid #dbb134;
   }
@@ -35,12 +36,29 @@
   }
 
   .btn-secondary {
-    @apply text-black px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold transition-all duration-200 text-sm sm:text-base transform hover:scale-105 active:scale-95;
+    @apply px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold transition-all duration-200 text-sm sm:text-base transform hover:scale-105 active:scale-95;
+    color: #000000;
     background-color: #D4AF37;
     border: 2px solid #dbb134;
   }
   
   .btn-secondary:hover {
+    background-color: #C9A428;
+  }
+  .btn {
+    @apply px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold transition-all duration-200 text-sm sm:text-base transform hover:scale-105 active:scale-95;
+    /* border: 2px solid #000000; */
+    color: black;
+    background-color: #D4AF37;
+  }
+
+  .btn-cta {
+    @apply px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold transition-all duration-200 text-sm sm:text-base transform hover:scale-105 active:scale-95;
+    color: #f0dab1;
+    background-color: #D4AF37;
+    border: 2px solid #000000;
+  }
+  .btn-cta:hover {
     background-color: #C9A428;
   }
 

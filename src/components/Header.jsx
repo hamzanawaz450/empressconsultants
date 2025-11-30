@@ -132,7 +132,7 @@ export default function Header() {
                 </Link>
               </div>
             </div>
-            <Link to="/contact" className="ml-4 btn-primary">
+            <Link to="/contact" className="ml-4 btn-cta">
               Contact
             </Link>
           </div>
@@ -206,7 +206,7 @@ export default function Header() {
               </Link>
               <Link
                 to="/contact"
-                className="btn-primary block text-center py-3 mt-2"
+                className="btn-cta block text-center py-3 mt-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact

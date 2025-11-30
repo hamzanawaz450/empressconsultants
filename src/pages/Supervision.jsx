@@ -35,7 +35,7 @@ export default function Supervision() {
             </ul>
 
             <div className="text-center">
-              <Link to="/contact" className="btn-primary inline-block text-lg px-8 py-3">
+              <Link to="/contact" className="btn-cta inline-block text-lg px-8 py-3">
                 Request Supervision
               </Link>
             </div>

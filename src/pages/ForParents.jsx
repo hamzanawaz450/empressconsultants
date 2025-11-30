@@ -114,7 +114,7 @@ export default function ForParents() {
           <p className="text-lg sm:text-xl mb-6 sm:mb-8 px-4 text-black/90">
             Access our parent resources and schedule your consultation
           </p>
-          <Link to="/contact" className="btn-secondary inline-block">
+          <Link to="/contact" className="btn-cta inline-block">
             Book a Consultation
           </Link>
         </div>

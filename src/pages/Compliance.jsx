@@ -159,10 +159,10 @@ export default function Compliance() {
             Contact us if you have questions about our privacy practices, data use, or compliance policies.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="mailto:info@empress-consultants.com" className="btn-secondary inline-block">
+            <a href="mailto:info@empress-consultants.com" className="btn-cta inline-block">
               Email Us
             </a>
-            <a href="tel:6467690706" className="btn-secondary inline-block">
+            <a href="tel:6467690706" className="btn-cta inline-block">
               Call (646) 769-0706
             </a>
           </div>
