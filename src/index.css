@@ -58,6 +58,12 @@
     background-color: #D4AF37;
     border: 2px solid #000000;
   }
+  .btn-contact {
+    @apply px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold transition-all duration-200 text-sm sm:text-base transform hover:scale-105 active:scale-95;
+    color: #f0dab1;
+    background-color: #D4AF37;
+    border: 2px solid #000000;
+  }
   .btn-cta:hover {
     background-color: #C9A428;
   }

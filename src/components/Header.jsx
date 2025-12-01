@@ -132,7 +132,7 @@ export default function Header() {
                 </Link>
               </div>
             </div>
-            <Link to="/contact" className="ml-4 btn-cta">
+            <Link to="/contact" className="ml-4 btn-contact" >
               Contact
             </Link>
           </div>
