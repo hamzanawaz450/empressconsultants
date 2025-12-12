@@ -114,7 +114,7 @@ export default function Home() {
 
             {/* Who We Serve */}
             <Link
-              to="/who-we-serve"
+              to="/about"
               className="group rounded-2xl p-7 bg-[#F5F0E8] shadow-md hover:shadow-xl transition-all duration-300"
               style={{ border: `1px solid rgba(212,175,55,0.65)` }}
             >
