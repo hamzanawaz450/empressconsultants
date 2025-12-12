@@ -21,7 +21,7 @@ export default function LegalAdvocacy() {
             <div className="bg-[#F5F0E8] p-6 rounded-lg border border-black/10">
               <h3 className="text-xl font-semibold mb-3" style={{ color: '#D4AF37' }}>FOFD/IHO Implementation</h3>
               <p className="text-black">
-                Expert implementation of Findings of Fact and Decision (FOFD) and Impartial Hearing Officer (IHO) orders with full compliance documentation.
+                Expert implementation of Findings of Fact and Decision (FOFD) with full compliance documentation.
               </p>
             </div>
             <div className="bg-[#F5F0E8] p-6 rounded-lg border border-black/10">

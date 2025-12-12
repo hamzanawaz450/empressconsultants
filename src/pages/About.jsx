@@ -1,189 +1,203 @@
-import React from 'react';
+import { Link } from "react-router-dom";
 
 export default function About() {
-  const [activeCard, setActiveCard] = React.useState(null);
-
-  const handleScrollToCard = (id) => {
-    setActiveCard(id);
-    document.getElementById(`principle-${id}`)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    
-    // Remove highlight after 2 seconds
-    setTimeout(() => {
-      setActiveCard(null);
-    }, 2000);
-  };
-
-  const principles = [
-    {
-      id: "individualization",
-      title: "Individualization & Assessment",
-      shortDesc: "Comprehensive functional assessments tailored to each learner",
-      fullDesc: "Each learner's program begins with a comprehensive functional assessment (FBA, ABLLS-R, Vineland, PEAK) to identify unique strengths, needs, and environmental variables that influence behavior."
-    },
-    {
-      id: "data-driven",
-      title: "Data-Driven Decision Making",
-      shortDesc: "Systematic data collection and empirical decisions",
-      fullDesc: "Every session includes systematic data collection on skill acquisition and behavior reduction targets. Our BCBAs make empirical decisions—modifying interventions only when data trends support change."
-    },
-    {
-      id: "reinforcement",
-      title: "Reinforcement & Skill Generalization",
-      shortDesc: "Positive reinforcement across all settings",
-      fullDesc: "Teaching emphasizes positive reinforcement to strengthen desired behaviors. Skills are practiced across home, school, and community settings to ensure generalization and maintenance."
-    },
-    {
-      id: "functional-behavior",
-      title: "Functional Behavior Support",
-      shortDesc: "Root cause analysis and function-based interventions",
-      fullDesc: "Challenging behaviors are addressed through Functional Behavior Assessments to identify root causes. Each BIP includes function-based replacement behaviors and proactive strategies."
-    },
-    {
-      id: "family-empowerment",
-      title: "Family Empowerment",
-      shortDesc: "Parent training and coaching for daily routines",
-      fullDesc: "Families are partners in the process. Through parent training, coaching, and real-time feedback, caregivers gain confidence applying ABA principles in daily routines."
-    },
-    {
-      id: "collaboration",
-      title: "Collaboration & Integration",
-      shortDesc: "Multidisciplinary approach for unified care",
-      fullDesc: "Our multidisciplinary model brings together BCBAs, educators, speech and occupational therapists for a unified plan of care that aligns with IEP goals and family systems."
-    },
-    {
-      id: "ethical-excellence",
-      title: "Ethical & Professional Excellence",
-      shortDesc: "BACB Ethics Code and cultural responsiveness",
-      fullDesc: "Empress Consultants upholds the BACB Ethics Code and New York State LBA standards, ensuring integrity, respect, and informed consent in all services. We promote cultural responsiveness and linguistic accessibility, recognizing that every family's background enriches the intervention process."
-    }
-  ];
-
   return (
-    <div className="min-h-screen bg-[#F5F0E8]">
-      {/* Hero Section */}
+    <div className="min-h-screen">
+      {/* Hero / Intro */}
       <section className="bg-gradient-to-br from-[#F5F0E8] to-[#EFE9E3] section-padding">
-        <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-black">About Us</h1>
-          <p className="text-base sm:text-lg md:text-xl text-black max-w-3xl mx-auto">
-            Delivering ethical, evidence-based behavioral interventions that enhance independence, dignity, and inclusion.
+        <div className="container-custom max-w-4xl text-center">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-black">
+            About Us
+          </h1>
+          <p className="text-base sm:text-lg md:text-xl mb-3 text-black">
+            An ABA (Applied Behavioral Analysis) agency serving children, families, and schools in
+            Westchester and the Bronx.
+          </p>
+          <p className="text-base sm:text-lg md:text-xl text-black">
+            We provide ethical, evidence-based ABA with a focus on
+            collaboration, cultural humility, and strategies that work in real
+            life—not just on paper.
           </p>
         </div>
       </section>
 
-      {/* Quick Links */}
-      <section className="py-12 px-4 bg-[#EFE9E3]">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-black">What defines us:</h2>
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
-            <ul className="space-y-4">
-              {principles.slice(0, 4).map((principle) => (
-                <li key={principle.id} className="flex items-start">
-                  <span className="mr-4 text-2xl">🧩</span>
-                  <button
-                    className="text-lg underline text-black hover:text-[#D4AF37] text-left"
-                    onClick={() => handleScrollToCard(principle.id)}
-                  >
-                    {principle.title}
-                  </button>
-                </li>
-              ))}
+      {/* Mission & Vision */}
+      <section className="section-padding bg-[#F5F0E8]">
+        <div className="container-custom max-w-6xl grid md:grid-cols-2 gap-8">
+          <div>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-black">
+              Our Mission
+            </h2>
+            <p className="text-base sm:text-lg leading-relaxed text-black">
+              Empress Consultants exists to support children with developmental
+              and behavioral needs while honoring each family’s strengths,
+              culture, and goals. We aim to make ABA accessible, understandable,
+              and truly supportive of a child’s daily life.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-black">
+              Our Vision
+            </h2>
+            <p className="text-base sm:text-lg leading-relaxed text-black">
+              We envision home, school, and community environments where
+              children are understood and included—and where caregivers and
+              professionals feel equipped, not overwhelmed, when responding to
+              needs and behaviors.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* What Families Can Expect */}
+      <section className="section-padding bg-[#EFE9E3]">
+        <div className="container-custom max-w-6xl">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 text-black">
+            What Families Can Expect
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <div
+              className="bg-[#F5F0E8] rounded-xl shadow-lg border border-black/10 border-t-4 p-6"
+              style={{ borderTopColor: "#D4AF37" }}
+            >
+              <h3 className="text-lg font-bold mb-2 text-black">
+                Clear Communication
+              </h3>
+              <p className="text-sm sm:text-base leading-relaxed text-black">
+                We explain recommendations in everyday language and keep you
+                updated on progress, next steps, and what we’re seeing in
+                session.
+              </p>
+            </div>
+
+            <div
+              className="bg-[#F5F0E8] rounded-xl shadow-lg border border-black/10 border-t-4 p-6"
+              style={{ borderTopColor: "#D4AF37" }}
+            >
+              <h3 className="text-lg font-bold mb-2 text-black">
+                Collaborative Planning
+              </h3>
+              <p className="text-sm sm:text-base leading-relaxed text-black">
+                We work alongside caregivers, schools, and related providers so
+                goals and strategies feel aligned across settings.
+              </p>
+            </div>
+
+            <div
+              className="bg-[#F5F0E8] rounded-xl shadow-lg border border-black/10 border-t-4 p-6"
+              style={{ borderTopColor: "#D4AF37" }}
+            >
+              <h3 className="text-lg font-bold mb-2 text-black">
+                Ethical, Child-Centered Care
+              </h3>
+              <p className="text-sm sm:text-base leading-relaxed text-black">
+                We prioritize dignity, autonomy, and meaningful outcomes. ABA
+                should feel respectful and sustainable for both the child and
+                the family.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Core Values */}
+      <section className="section-padding bg-[#F5F0E8]">
+        <div className="container-custom max-w-6xl">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-black text-center">
+            Our Core Values
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <div
+              className="bg-[#F5F0E8] rounded-xl shadow-lg border border-black/10 border-t-4 p-6"
+              style={{ borderTopColor: "#D4AF37" }}
+            >
+              <h3 className="text-lg font-bold mb-2 text-black">Inclusivity</h3>
+              <p className="text-sm sm:text-base leading-relaxed text-black">
+                We respect each family’s culture, identity, and lived
+                experience. Services are never one-size-fits-all.
+              </p>
+            </div>
+
+            <div
+              className="bg-[#F5F0E8] rounded-xl shadow-lg border border-black/10 border-t-4 p-6"
+              style={{ borderTopColor: "#D4AF37" }}
+            >
+              <h3 className="text-lg font-bold mb-2 text-black">
+                Collaboration
+              </h3>
+              <p className="text-sm sm:text-base leading-relaxed text-black">
+                We believe the best outcomes happen when caregivers, schools,
+                and clinicians work as one team.
+              </p>
+            </div>
+
+            <div
+              className="bg-[#F5F0E8] rounded-xl shadow-lg border border-black/10 border-t-4 p-6"
+              style={{ borderTopColor: "#D4AF37" }}
+            >
+              <h3 className="text-lg font-bold mb-2 text-black">
+                Evidence-Based Practice
+              </h3>
+              <p className="text-sm sm:text-base leading-relaxed text-black">
+                Our work is grounded in ABA principles, data, and ongoing
+                professional learning, while staying responsive to each child’s
+                needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Where We Serve */}
+      <section className="section-padding bg-[#EFE9E3]">
+        <div className="container-custom max-w-4xl">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-black text-center">
+            Where We Serve
+          </h2>
+
+          <div
+            className="bg-[#F5F0E8] rounded-xl shadow-lg border border-black/10 border-t-4 p-6"
+            style={{ borderTopColor: "#D4AF37" }}
+          >
+            <p className="text-base sm:text-lg mb-4 text-black">
+              Empress Consultants currently provides services in:
+            </p>
+            <ul className="list-disc list-inside space-y-2 text-base sm:text-lg text-black">
+              <li>Westchester County, NY</li>
+              <li>The Bronx, NY</li>
+              <li>
+                Selected surrounding areas, depending on clinician availability
+              </li>
             </ul>
-            <ul className="space-y-4">
-              {principles.slice(4).map((principle) => (
-                <li key={principle.id} className="flex items-start">
-                  <span className="mr-4 text-2xl">🧩</span>
-                  <button
-                    className="text-lg underline text-black hover:text-[#D4AF37] text-left"
-                    onClick={() => handleScrollToCard(principle.id)}
-                  >
-                    {principle.title}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      {/* Mission */}
-      <section id="mission" className="py-12 px-4 bg-[#F5F0E8]">
-        <div className="max-w-6xl mx-auto">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-black">Our Mission</h2>
-            <p className="text-base sm:text-lg text-black mb-6 sm:mb-8">
-              At Empress Consultants, our mission is to deliver compassionate, evidence-based Applied Behavior Analysis and educational services that transform potential into progress.
-            </p>
-            <p className="text-base sm:text-lg text-black mb-6 sm:mb-8">
-              Guided by the principles of ABA—<strong>individualization, data-driven decision making, functional assessment, reinforcement, and across settings</strong>—we design interventions that honor each child's strengths and empower families to sustain meaningful growth across all environments.
-            </p>
-            <p className="text-base sm:text-lg text-black">
-              Our commitment is to <strong>ethical practice, measurable outcomes, and human dignity</strong>, ensuring that every program we build is as unique as the child it serves.
+            <p className="mt-4 text-sm sm:text-base text-black">
+              Availability may vary based on caseload and staffing. We’re happy
+              to discuss your location and whether we’re able to support your
+              family or school at this time.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Vision */}
-      <section id="vision" className="py-12 px-4 bg-[#EFE9E3]">
-        <div className="max-w-6xl mx-auto">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-black">Vision Statement (ABA-Framed)</h2>
-            <p className="text-base sm:text-lg md:text-xl text-black italic">
-              To integrate the science of Applied Behavior Analysis with the art of compassionate teaching—creating a world where every learner develops independence, communication, and confidence through individualized, data-driven support.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Detailed Principles Sections */}
-      <section className="py-12 px-4 bg-gradient-to-br from-[#F5F0E8] to-[#EFE9E3]">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12 text-black">Our Core Principles</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
-            {principles.map((principle, index) => (
-              <div
-                key={principle.id}
-                id={`principle-${principle.id}`}
-                className={`bg-[#F5F0E8] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border-t-4 hover:scale-105 transform border border-black/10 ${
-                  activeCard === principle.id ? 'ring-4 ring-[#D4AF37] scale-105' : ''
-                }`}
-                style={{ borderTopColor: '#D4AF37' }}
-              >
-                <div className="flex items-center mb-4">
-                  <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 mr-3" style={{ backgroundColor: '#D4AF37' }}>
-                    <span className="text-black font-bold">{index + 1}</span>
-                  </div>
-                  <h3 className="text-lg sm:text-xl font-bold text-black">
-                    {principle.title}
-                  </h3>
-                </div>
-                <p className="text-sm sm:text-base text-black leading-relaxed">
-                  {principle.fullDesc}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Values */}
-      <section className="py-12 px-4 bg-[#EFE9E3]">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-black">Our Values</h2>
-          <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
-            <div className="text-center">
-              <h3 className="text-xl font-semibold mb-2" style={{ color: '#D4AF37' }}>Integrity</h3>
-              <p className="text-black">Ethical practice in all we do</p>
-            </div>
-            <div className="text-center">
-              <h3 className="text-xl font-semibold mb-2" style={{ color: '#D4AF37' }}>Data Accuracy</h3>
-              <p className="text-black">Evidence-based decision making</p>
-            </div>
-            <div className="text-center">
-              <h3 className="text-xl font-semibold mb-2" style={{ color: '#D4AF37' }}>Cultural Competence</h3>
-              <p className="text-black">Respectful, inclusive service delivery</p>
-            </div>
-          </div>
+      {/* CTA */}
+      <section
+        className="section-padding text-black"
+        style={{ backgroundColor: "#D4AF37" }}
+      >
+        <div className="container-custom max-w-3xl text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">
+            Let&apos;s Talk About What Support Could Look Like
+          </h2>
+          <p className="text-base sm:text-lg mb-6">
+            If you&apos;re a caregiver, educator, or provider seeking ABA
+            support or collaboration, we&apos;d be honored to learn more about
+            your needs.
+          </p>
+          <Link to="/contact" className="btn-cta inline-block">
+            Contact Us
+          </Link>
         </div>
       </section>
     </div>

@@ -1,54 +1,42 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import ScrollToTop from './components/ScrollToTop';
-import Landing from './pages/Landing';
-import Home from './pages/Home';
-import Services from './pages/Services';
-import ABATherapy from './pages/ABATherapy';
-import ParentTraining from './pages/ParentTraining';
-import Supervision from './pages/Supervision';
-import RelatedServices from './pages/RelatedServices';
-import ImpartialHearing from './pages/ImpartialHearing';
-import ForSchools from './pages/ForSchools';
-import ForParents from './pages/ForParents';
-import LegalAdvocacy from './pages/LegalAdvocacy';
-import About from './pages/About';
-import Careers from './pages/Careers';
-import Resources from './pages/Resources';
-import Contact from './pages/Contact';
-import Compliance from './pages/Compliance';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function App() {
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
+import Landing from "./pages/Landing";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import ABATherapy from "./pages/ABATherapy";
+import Supervision from "./pages/Supervision";
+import ParentTraining from "./pages/ParentTraining";
+import RelatedServices from "./pages/RelatedServices";
+import Contact from "./pages/Contact";
+import Careers from "./pages/Careers";
+import Compliance from "./pages/Compliance";
+
+export default function App() {
   return (
-    <Router>
-      <ScrollToTop />
-      <div className="min-h-screen flex flex-col">
-        <Header />
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Landing />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/services/aba-therapy" element={<ABATherapy />} />
-            <Route path="/services/parent-training" element={<ParentTraining />} />
-            <Route path="/services/supervision" element={<Supervision />} />
-            <Route path="/services/related-services" element={<RelatedServices />} />
-            <Route path="/services/impartial-hearing" element={<ImpartialHearing />} />
-            <Route path="/schools" element={<ForSchools />} />
-            <Route path="/parents" element={<ForParents />} />
-            <Route path="/legal" element={<LegalAdvocacy />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/careers" element={<Careers />} />
-            <Route path="/resources" element={<Resources />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/compliance" element={<Compliance />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </Router>
+    <BrowserRouter>
+      <Header />
+
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/home" element={<Home />} />
+
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/services/aba-therapy" element={<ABATherapy />} />
+        <Route path="/services/supervision" element={<Supervision />} />
+        <Route path="/services/parent-training" element={<ParentTraining />} />
+        <Route path="/services/related-services" element={<RelatedServices />} />
+
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/careers" element={<Careers />} />
+        <Route path="/compliance" element={<Compliance />} />
+      </Routes>
+
+      <Footer />
+    </BrowserRouter>
   );
 }
-
-export default App;

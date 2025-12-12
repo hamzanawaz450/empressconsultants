@@ -11,7 +11,7 @@ export default function Header() {
         <div className="flex flex-col items-center justify-center relative">
           <Link to="/" className="flex flex-col items-center group">
             <img
-              src="/empress-favicon.jpeg"
+              src="/main logo.jpeg"
               alt="Empress Consultants Logo"
               className="w-16 h-16 md:w-20 md:h-20 object-contain"
             />
@@ -137,11 +137,7 @@ export default function Header() {
             </div>
 
             {/* Contact button (desktop) */}
-            <Link
-              to="/contact"
-              className="px-6 py-3 hover:text-[#D4AF37] transition-colors duration-200"
-              style={{ color: "#f0dab1" }}
-            >
+            <Link to="/contact" className="ml-4 btn-contact">
               Contact
             </Link>
           </div>
@@ -211,16 +207,15 @@ export default function Header() {
               >
                 Related Service Coordination
               </Link>
-            </div>
 
-            <Link
-              to="/contact"
-              className="block py-3 px-4 hover:text-[#D4AF37] hover:bg-white/10 rounded-lg transition-all duration-200 transform hover:translate-x-1 mt-2"
-              style={{ color: "#f0dab1" }}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Contact
-            </Link>
+              <Link
+                to="/contact"
+                className="btn-cta block text-center py-3 mt-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contact
+              </Link>
+            </div>
           </div>
         </div>
       </nav>

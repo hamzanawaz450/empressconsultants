@@ -35,11 +35,7 @@ export default function Services() {
       description: "Integrated collaboration among Speech, OT, PT, and SETSS professionals to support academic and behavioral progress.",
       link: "/services/related-services"
     },
-    {
-      title: "Impartial Hearing Support",
-      description: "Expert implementation of Findings of Fact and Decision (FOFD) and Impartial Hearing Officer (IHO) orders. We provide clinical documentation, expert testimony, and compliance support for families navigating the legal process to secure appropriate educational services.",
-      link: "/services/impartial-hearing"
-    }
+   
   ];
 
 
